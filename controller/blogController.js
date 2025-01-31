@@ -12,6 +12,7 @@ const blogController = {
     },
     getSelectedBlog: async (req, res) => {
         try {
+            console.log("GETSELECTED BLOG", req.params.id);
             const id = req.params.id;
             const data = await BlogData.findById(id).populate("modifiedBy");
             if (!data) {
@@ -25,7 +26,8 @@ const blogController = {
     },
     addNewBlog: async (req, res) => {
         try {
-            const { title, author, content, summary, tags, publishedDate, updatedDate, image, video, views, likes, isFeatured, modifiedBy, modifiedOn } = req.body;
+            console.log("addblog : ", req.body);
+            const { _id, title, author, content, summary, tags, publishedDate, updatedDate, image, video, views, likes, isFeatured, modifiedBy, modifiedOn, isEdit } = req.body;
             if (!title) {
                 return res.status(404).json({ message: "Title is mandatory" });
             }
@@ -50,9 +52,14 @@ const blogController = {
                 likes: likes,
                 isFeatured: isFeatured,
                 modifiedBy: modifiedBy,
-                modifiedOn: modifiedOn,
-            })
-            const data = await BlogData.save(newBlog);
+                modifiedOn: new Date(),
+            });
+            let data = null;
+            if (isEdit)
+                data = await BlogData.findById(_id).updateOne(newBlog);
+            else
+                data = await BlogData.save(newBlog);
+
             if (!data) {
                 return res.status(404).json({ message: "Blogs not found" });
             }

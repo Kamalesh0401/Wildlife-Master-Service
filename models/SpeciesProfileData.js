@@ -23,14 +23,6 @@ const FilesSchema = new mongoose.Schema({
     modifiedOn: { type: Date, default: Date.now, required: true }
 });
 
-
-const AdminSchema = new mongoose.Schema({
-    adminName: { type: String, required: true },
-    adminEmail: { type: String, required: true },
-    adminPassword: { type: String, required: true },
-    adminStatus: { type: Boolean, required: true },
-});
-
 const UserSchema = new mongoose.Schema({
     userName: { type: String, required: true },
     userEmail: { type: String, required: true },
@@ -45,7 +37,6 @@ const CommentsSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Files', FilesSchema);
-module.exports = mongoose.model('Admin', AdminSchema);
 module.exports = mongoose.model('User', UserSchema);
 module.exports = mongoose.model('Comments', CommentsSchema);
 module.exports = mongoose.model('SpeciesProfileData', SpeciesProfileDataSchema);

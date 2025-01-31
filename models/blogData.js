@@ -13,7 +13,7 @@ const BlogSchema = new mongoose.Schema({
     views: { type: Number, default: 0 }, // Count of views
     likes: { type: Number, default: 0 }, // Count of likes
     isFeatured: { type: Boolean, default: false }, // If the blog is a featured blog
-    modifiedBy: { type: mongoose.Schema.Types.ObjectId, ref: "Admin", required: true },
+    modifiedBy: { type: mongoose.Schema.Types.ObjectId, ref: "Admins", required: true },
     modifiedOn: { type: Date, default: Date.now, required: true }
 });
 
