@@ -14,15 +14,6 @@ const SpeciesProfileDataSchema = new mongoose.Schema({
     modifiedOn: { type: Date, default: Date.now, required: true }
 });
 
-const FilesSchema = new mongoose.Schema({
-    file_name: { type: String, required: true },
-    file_url: { type: String, required: true },
-    file_dir: { type: String, required: true },
-    is_video: { type: Boolean, required: true },
-    modifiedBy: { type: mongoose.Schema.Types.ObjectId, ref: "Admin", required: true },
-    modifiedOn: { type: Date, default: Date.now, required: true }
-});
-
 const UserSchema = new mongoose.Schema({
     userName: { type: String, required: true },
     userEmail: { type: String, required: true },
@@ -36,7 +27,6 @@ const CommentsSchema = new mongoose.Schema({
     commentedAt: { type: Date, default: Date.now }, // Timestamp of the comment
 });
 
-module.exports = mongoose.model('Files', FilesSchema);
 module.exports = mongoose.model('User', UserSchema);
 module.exports = mongoose.model('Comments', CommentsSchema);
 module.exports = mongoose.model('SpeciesProfileData', SpeciesProfileDataSchema);

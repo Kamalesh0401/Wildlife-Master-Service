@@ -26,7 +26,7 @@ const adminController = {
                     res.status(200).json({ token, admin: { id: admin._id, loginID: admin.loginId, name: admin.name, email: admin.email } });
                 }
                 else {
-                    return res.status(404).json({ message: "Password doesn't match" });
+                    return res.status(400).json({ message: "Password doesn't match" });
                 }
             }
             else {
