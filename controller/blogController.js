@@ -73,7 +73,22 @@ const blogController = {
             });
             let data = null;
             if (isEdit) {
-                data = await BlogData.findByIdAndUpdate(_id, newBlog, { new: true });
+                data = await BlogData.findByIdAndUpdate(_id, {
+                    title: title,
+                    author: author,
+                    content: content,
+                    summary: summary,
+                    tags: tags,
+                    publishedDate: publishedDate,
+                    updatedDate: updatedDate,
+                    image: image,
+                    video: video,
+                    views: views,
+                    likes: likes,
+                    isFeatured: isFeatured,
+                    modifiedBy: modifiedBy,
+                    modifiedOn: new Date(),
+                }, { new: true });
                 //data = await Blog.updateOne({ _id: _id }, { $set: newBlog });
             }
             else {
