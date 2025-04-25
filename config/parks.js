@@ -1,0 +1,507 @@
+// Northern India National Parks
+const northernIndia = [
+    {
+        name: 'Jim Corbett National Park, Uttarakhand',
+        description: 'India\'s oldest national park established in 1936, spanning over 520 square kilometers. It is known for its significant tiger population and diverse wildlife nestled in the foothills of the Himalayas along the Ramganga River.',
+        overview: 'Jim Corbett features diverse landscapes including hills, riverine belts, marshy depressions, and grasslands. The park offers jeep safaris, elephant rides, and guided nature walks. Best time to visit is from November to June.',
+        majorAnimals: [
+            { id: 1, name: 'Bengal Tiger' },
+            { id: 2, name: 'Asian Elephant' },
+            { id: 3, name: 'Leopard' },
+            { id: 4, name: 'Himalayan Black Bear' },
+            { id: 5, name: 'Indian Python' }
+        ],
+        additionalInfo: 'Named after hunter-turned-conservationist Jim Corbett. Contains over 600 species of birds and 50 species of mammals. Features several zones including Dhikala, Bijrani, and Jhirna.'
+    },
+    {
+        name: 'Rajaji National Park, Uttarakhand',
+        description: 'Formed in 1983 by merging three sanctuaries, Rajaji National Park covers over 820 square kilometers. It\'s located at the foothills of the Himalayas and features the Ganges flowing through its eastern boundary.',
+        overview: 'Known for housing the largest population of elephants in Uttarakhand, this park offers safari experiences, birdwatching, and nature walks. The best time to visit is from mid-November to mid-June.',
+        majorAnimals: [
+            { id: 1, name: 'Asian Elephant' },
+            { id: 2, name: 'Bengal Tiger' },
+            { id: 3, name: 'Leopard' },
+            { id: 4, name: 'Goral' },
+            { id: 5, name: 'King Cobra' }
+        ],
+        additionalInfo: 'Named after freedom fighter C. Rajagopalachari. Contains over 315 bird species and is home to the Gharial crocodile. Features diverse habitats including broadleaved deciduous forests, riverine vegetation, and grasslands.'
+    },
+    {
+        name: 'Great Himalayan National Park, Himachal Pradesh',
+        description: 'Declared a UNESCO World Heritage Site in 2014, this park spans 754 square kilometers in the Kullu region. It protects one of the most pristine Western Himalayan ecosystems with elevations ranging from 1,500 to 6,000 meters.',
+        overview: 'Known for its alpine meadows, glaciers, and dense forests, the park offers trekking routes of various difficulties. The park is only accessible by foot and requires proper permits. Best visited from April to June and September to November.',
+        majorAnimals: [
+            { id: 1, name: 'Snow Leopard' },
+            { id: 2, name: 'Himalayan Tahr' },
+            { id: 3, name: 'Himalayan Brown Bear' },
+            { id: 4, name: 'Blue Sheep (Bharal)' },
+            { id: 5, name: 'Western Tragopan' }
+        ],
+        additionalInfo: 'Home to over 375 fauna species including 31 mammals and 181 birds. Contains ancient forests of oak, conifer, and rhododendron. Four major rivers originate within the park: Tirthan, Sainj, Jiwa Nal, and Parvati.'
+    },
+    {
+        name: 'Hemis National Park, Ladakh',
+        description: 'Established in 1981, Hemis is the largest national park in South Asia covering over 4,400 square kilometers of high-altitude trans-Himalayan ecosystem. It\'s named after the famous Hemis Monastery nearby.',
+        overview: 'Known for its snow leopard population, this high-altitude park (3,000-6,000 meters) offers challenging treks and wildlife spotting. Tourists can also explore Buddhist monasteries in the area. Best visited from May to October.',
+        majorAnimals: [
+            { id: 1, name: 'Snow Leopard' },
+            { id: 2, name: 'Tibetan Wolf' },
+            { id: 3, name: 'Eurasian Brown Bear' },
+            { id: 4, name: 'Ladakh Urial' },
+            { id: 5, name: 'Himalayan Marmot' }
+        ],
+        additionalInfo: 'Hosts the Snow Leopard Project for conservation. Famous for the "Hemis Festival" celebrated every June. Comprises dry alpine shrubland and steppe vegetation with limited forest cover.'
+    },
+    {
+        name: 'Dachigam National Park, Jammu & Kashmir',
+        description: 'Spanning around 141 square kilometers near Srinagar, Dachigam literally means "ten villages" that were relocated for its creation. The park has two sections - Upper and Lower Dachigam with altitudes varying from 1,700 to 4,300 meters.',
+        overview: 'Famous for being the last stronghold of the endangered Kashmir stag (Hangul), this park offers wildlife viewing, photography, and trekking opportunities. Best visited from April to October, though winter offers unique snow-covered landscapes.',
+        majorAnimals: [
+            { id: 1, name: 'Kashmir Stag (Hangul)' },
+            { id: 2, name: 'Himalayan Black Bear' },
+            { id: 3, name: 'Leopard' },
+            { id: 4, name: 'Musk Deer' },
+            { id: 5, name: 'Kashmir Flying Squirrel' }
+        ],
+        additionalInfo: 'Originally a game reserve for the Maharaja of Kashmir. The Dagwan river flows through the park, creating a picturesque valley. Houses over 500 plant species and 150 bird species including the Golden Eagle.'
+    },
+    {
+        name: 'Ranthambore National Park, Rajasthan',
+        description: 'Once a hunting ground for the Maharajas of Jaipur, Ranthambore covers about 392 square kilometers in eastern Rajasthan. The park is famous for its Bengal tigers and the ancient Ranthambore Fort that sits within its boundaries.',
+        overview: 'One of India\'s most popular tiger reserves offering jeep and canter safaris. The park is divided into 10 safari zones. Best time to visit is from October to June, with peak tiger sightings often occurring in March to May.',
+        majorAnimals: [
+            { id: 1, name: 'Bengal Tiger' },
+            { id: 2, name: 'Leopard' },
+            { id: 3, name: 'Sloth Bear' },
+            { id: 4, name: 'Sambar Deer' },
+            { id: 5, name: 'Indian Flying Fox' }
+        ],
+        additionalInfo: 'Contains the 10th century Ranthambore Fort, a UNESCO World Heritage Site. Features three major lakes: Padam Talao, Raj Bagh Talao, and Malik Talao. Home to one of India\'s oldest banyan trees.'
+    },
+    {
+        name: 'Sariska Tiger Reserve, Rajasthan',
+        description: 'Located in the Aravalli Hills about 200 kilometers from Delhi, Sariska spans approximately 866 square kilometers. The park contains ruins of medieval temples and a 17th-century fort, adding historical value to its natural beauty.',
+        overview: 'Known for its reintroduced tiger population after losing all its tigers to poaching in 2004-05. The reserve offers jeep safaris and visits to ancient temples. Best visited from October to June.',
+        majorAnimals: [
+            { id: 1, name: 'Bengal Tiger' },
+            { id: 2, name: 'Leopard' },
+            { id: 3, name: 'Striped Hyena' },
+            { id: 4, name: 'Indian Jackal' },
+            { id: 5, name: 'Rhesus Macaque' }
+        ],
+        additionalInfo: 'Features the Kankwadi Fort dating back to the 16th century. Houses the ancient Neelkanth temples (6th-13th century). First reserve to successfully relocate tigers as part of conservation efforts.'
+    },
+    {
+        name: 'Keoladeo National Park, Rajasthan',
+        description: 'Formerly known as Bharatpur Bird Sanctuary, this UNESCO World Heritage Site covers just 29 square kilometers but hosts over 370 bird species. It was created 250 years ago as a duck shooting reserve for the Maharajas.',
+        overview: 'One of the world\'s most important bird breeding and feeding grounds, especially for migratory waterbirds. Visitors can explore on foot, bicycle, or rickshaw. Best visited from October to March when migratory birds arrive.',
+        majorAnimals: [
+            { id: 1, name: 'Siberian Crane' },
+            { id: 2, name: 'Greater Flamingo' },
+            { id: 3, name: 'Indian Python' },
+            { id: 4, name: 'Sambar Deer' },
+            { id: 5, name: 'Golden Jackal' }
+        ],
+        additionalInfo: 'Named after a Shiva temple within the park. Artificial wetland created by damming the Gambhir and Banganga rivers. Notable for its extensive water management system with dykes, sluices, and mounds.'
+    }
+];
+
+// Western India National Parks
+const westernIndia = [
+    {
+        name: 'Gir National Park, Gujarat',
+        description: 'Established in 1965, Gir National Park spans approximately 1,412 square kilometers and is the sole home of the endangered Asiatic lion in the wild. Located in the Junagadh district of Gujarat, it features diverse landscapes including scrub jungle, forested hills, and plateaus.',
+        overview: 'The park offers jeep safaris for lion sightings and visits to the interpretation zone at Devalia. With over 500 Asiatic lions, this is the last place on Earth to see these majestic cats in their natural habitat. Best time to visit is from December to April.',
+        majorAnimals: [
+            { id: 1, name: 'Asiatic Lion' },
+            { id: 2, name: 'Leopard' },
+            { id: 3, name: 'Chowsingha (Four-horned Antelope)' },
+            { id: 4, name: 'Indian Fox' },
+            { id: 5, name: 'Ruddy Mongoose' }
+        ],
+        additionalInfo: 'Home to the Maldhari tribal community who lives inside the forest with their livestock. Contains seven major perennial rivers: Hiran, Saraswati, Datardi, Shingoda, Machhundri, Ghodavadi, and Raval. Hosts around 300 bird species including the endangered White-backed and Long-billed Vultures.'
+    },
+    {
+        name: 'Wild Ass Sanctuary, Little Rann of Kutch, Gujarat',
+        description: 'India\'s largest wildlife sanctuary covering nearly 5,000 square kilometers of the unique saline desert ecosystem of the Little Rann of Kutch. It\'s the last refuge of the endangered Indian Wild Ass (Khur).',
+        overview: 'This sanctuary transforms from a desert in winter to a wetland during monsoons. It offers jeep safaris to spot wild asses and migratory birds. Best time to visit is from October to March, with November to February being ideal for birdwatching.',
+        majorAnimals: [
+            { id: 1, name: 'Indian Wild Ass' },
+            { id: 2, name: 'Desert Fox' },
+            { id: 3, name: 'Jungle Cat' },
+            { id: 4, name: 'Chinkara (Indian Gazelle)' },
+            { id: 5, name: 'Flamingos' }
+        ],
+        additionalInfo: 'One of the world\'s largest salt deserts. An important breeding site for flamingos and other migratory birds. Traditional salt production continues in parts of the sanctuary by the Agaria community.'
+    },
+    {
+        name: 'Blackbuck National Park, Velavadar, Gujarat',
+        description: 'Established in 1976, this compact national park spans 34 square kilometers in the Bhavnagar district. It\'s primarily composed of grasslands and is known for housing the largest population of blackbucks in India.',
+        overview: 'This open grassland ecosystem offers excellent opportunities for wildlife photography and bird watching. Jeep safaris and walking trails are available. Best visited from October to March.',
+        majorAnimals: [
+            { id: 1, name: 'Blackbuck' },
+            { id: 2, name: 'Indian Wolf' },
+            { id: 3, name: 'Striped Hyena' },
+            { id: 4, name: 'Lesser Florican' },
+            { id: 5, name: 'Harrier' }
+        ],
+        additionalInfo: 'Formerly the private hunting ground of the Maharaja of Bhavnagar. One of the last remnants of tropical grassland ecosystems in the region. Hosts one of the world\'s largest harrier roosts with thousands of birds during winter.'
+    },
+    {
+        name: 'Sanjay Gandhi National Park, Mumbai, Maharashtra',
+        description: 'Remarkably located within Mumbai city limits, this 104 square kilometer national park is one of the most visited parks in Asia. It contains the 2400-year-old Kanheri Caves carved into basaltic rock.',
+        overview: 'A green lung for Mumbai offering nature trails, lion and tiger safaris in enclosed areas, and historical exploration of the Kanheri Caves. The park has a toy train, boating lake, and picnic spots. Accessible year-round, though closed during heavy monsoon days.',
+        majorAnimals: [
+            { id: 1, name: 'Leopard' },
+            { id: 2, name: 'Spotted Deer' },
+            { id: 3, name: 'Sambar Deer' },
+            { id: 4, name: 'Bonnet Macaque' },
+            { id: 5, name: 'Rusty-spotted Cat' }
+        ],
+        additionalInfo: 'Contains two lakes that supply water to Mumbai: Tulsi and Vihar. One of the few national parks situated within city limits anywhere in the world. Houses leopards that occasionally venture into the surrounding urban areas.'
+    },
+    {
+        name: 'Tadoba Andhari Tiger Reserve, Maharashtra',
+        description: 'Covering approximately 625 square kilometers in the Chandrapur district, Tadoba is Maharashtra\'s oldest and largest national park. Named after the deity "Tadoba" worshipped by local tribes and the Andhari river that flows through it.',
+        overview: 'Known for its high tiger sightings, this reserve offers jeep safaris in six zones. The landscape includes dense forests, bamboo groves, meadows, and the Tadoba lake. Best visited from October to June.',
+        majorAnimals: [
+            { id: 1, name: 'Bengal Tiger' },
+            { id: 2, name: 'Indian Leopard' },
+            { id: 3, name: 'Sloth Bear' },
+            { id: 4, name: 'Gaur (Indian Bison)' },
+            { id: 5, name: 'Marsh Crocodile' }
+        ],
+        additionalInfo: 'Home to the distinctive "Tadoba tigers" known for their frequent road crossings. Contains over 120 tigers, one of the highest tiger densities in India. Features the sacred Tadoba Lake, believed to be the dwelling of Taru, a tribal deity.'
+    }
+];
+
+// Central India National Parks
+const centralIndia = [
+    {
+        name: 'Kanha National Park, Madhya Pradesh',
+        description: 'Spanning over 940 square kilometers, Kanha inspired Rudyard Kipling\'s "The Jungle Book." Located in the Maikal range of the Satpuras, it features vast bamboo forests, grassy meadows, ravines, and streams creating a diverse ecosystem.',
+        overview: 'Known for its successful conservation of the endangered hard-ground Barasingha, Kanha offers morning and evening safaris in four zones: Kanha, Kisli, Mukki, and Sarhi. Best visited from October to June, with peak wildlife sightings from March to May.',
+        majorAnimals: [
+            { id: 1, name: 'Bengal Tiger' },
+            { id: 2, name: 'Barasingha (Swamp Deer)' },
+            { id: 3, name: 'Indian Leopard' },
+            { id: 4, name: 'Dhole (Wild Dog)' },
+            { id: 5, name: 'Indian Gaur' }
+        ],
+        additionalInfo: 'Features the famous Bamni Dadar or "Sunset Point" offering panoramic views. Home to over 300 bird species. Contains the Kanha museum that depicts tribal life and wildlife conservation efforts.'
+    },
+    {
+        name: 'Bandhavgarh National Park, Madhya Pradesh',
+        description: 'Covering approximately 437 square kilometers, Bandhavgarh boasts one of the highest density of tigers in India. Formerly a royal hunting ground, it contains ancient caves with inscriptions and rock paintings dating back to 2000 years.',
+        overview: 'The park is divided into three major zones - Tala, Magdhi, and Khitauli, with Tala offering the highest tiger sightings. The park offers both jeep and elephant safaris. Best visited from October to June.',
+        majorAnimals: [
+            { id: 1, name: 'Bengal Tiger' },
+            { id: 2, name: 'Leopard' },
+            { id: 3, name: 'Spotted Deer' },
+            { id: 4, name: 'Sloth Bear' },
+            { id: 5, name: 'White Tigers (historically)' }
+        ],
+        additionalInfo: 'Features the ancient Bandhavgarh Fort believed to be 2000 years old. The birthplace of white tigers, though none exist in the wild now. Contains the largest breeding population of leopards in India.'
+    },
+    {
+        name: 'Pench National Park, Madhya Pradesh & Maharashtra',
+        description: 'Straddling the border of two states, Pench covers around 758 square kilometers and is named after the Pench River that flows through it. It\'s another park that inspired Kipling\'s "The Jungle Book."',
+        overview: 'Characterized by teak forests and undulating terrain, Pench offers jeep safaris and nature walks in buffer zones. The Maharashtra and Madhya Pradesh sides have different entry points and safari arrangements. Best visited from February to May.',
+        majorAnimals: [
+            { id: 1, name: 'Bengal Tiger' },
+            { id: 2, name: 'Leopard' },
+            { id: 3, name: 'Wolf' },
+            { id: 4, name: 'Wild Dog (Dhole)' },
+            { id: 5, name: 'Barking Deer' }
+        ],
+        additionalInfo: 'Over 1200 species of plants have been recorded in the park. The Pench reservoir attracts numerous water birds. Contains the highest density of herbivores in any Indian tiger reserve.'
+    },
+    {
+        name: 'Satpura National Park, Madhya Pradesh',
+        description: 'Established in 1981, Satpura covers approximately 524 square kilometers in the rugged Satpura mountain ranges. This lesser-visited park offers a more intimate wildlife experience with diverse terrain including sandstone peaks, narrow gorges, and dense forests.',
+        overview: 'Uniquely offers walking safaris, boat safaris, and night safaris in addition to traditional jeep safaris. The park follows a low-volume tourism model. Best visited from October to June.',
+        majorAnimals: [
+            { id: 1, name: 'Indian Bison (Gaur)' },
+            { id: 2, name: 'Tiger' },
+            { id: 3, name: 'Leopard' },
+            { id: 4, name: 'Malabar Giant Squirrel' },
+            { id: 5, name: 'Indian Giant Squirrel' }
+        ],
+        additionalInfo: 'One of the few parks in India offering walking safaris. Contains the highest peak in central India, Dhoopgarh. Home to indigenous Korku and Gond tribal communities.'
+    },
+    {
+        name: 'Panna National Park, Madhya Pradesh',
+        description: 'Located along the Ken River and covering approximately 543 square kilometers, Panna is known for its stunning landscapes including plateaus, gorges, and waterfalls. The park experienced a complete tiger loss due to poaching by 2009 but has been successfully restocked.',
+        overview: 'Known for its tiger reintroduction success story, diamond mines nearby, and the pristine Ken River. Offers jeep safaris, boat rides, and night safaris in buffer zones. Best visited from October to June.',
+        majorAnimals: [
+            { id: 1, name: 'Bengal Tiger' },
+            { id: 2, name: 'Leopard' },
+            { id: 3, name: 'Rusty-spotted Cat' },
+            { id: 4, name: 'Gharial Crocodile' },
+            { id: 5, name: 'Vulture' }
+        ],
+        additionalInfo: 'Located near Khajuraho, a UNESCO World Heritage Site. The region is famous for diamond mines. Features the spectacular Raneh Falls, a multi-colored canyon formed by the Ken River.'
+    }
+];
+
+// Eastern India National Parks
+const easternIndia = [
+    {
+        name: 'Kaziranga National Park, Assam',
+        description: 'Established as a reserve forest in 1908 and declared a UNESCO World Heritage Site in 1985, Kaziranga covers 430 square kilometers of floodplains, tall elephant grass, marshland, and dense tropical forests along the Brahmaputra River.',
+        overview: 'Home to two-thirds of the world\'s great one-horned rhinoceroses and high density of tigers. The park offers elephant safaris and jeep safaris across four ranges: Central (Kohora), Western (Bagori), Eastern (Agoratoli), and Burapahar. Best visited from November to April.',
+        majorAnimals: [
+            { id: 1, name: 'One-horned Rhinoceros' },
+            { id: 2, name: 'Royal Bengal Tiger' },
+            { id: 3, name: 'Asian Elephant' },
+            { id: 4, name: 'Wild Water Buffalo' },
+            { id: 5, name: 'Swamp Deer' }
+        ],
+        additionalInfo: 'Highest density of tigers among protected areas in the world. Annual floods play a crucial role in maintaining the ecosystem. Houses the endangered Ganges dolphin in the Brahmaputra River.'
+    },
+    {
+        name: 'Manas National Park, Assam',
+        description: 'A UNESCO World Heritage Site located at the foothills of the Himalayas, Manas spans over 500 square kilometers. Named after the Manas River, it extends into Bhutan where it is known as the Royal Manas National Park.',
+        overview: 'Established in 1990, Manas National Park is a biodiversity hotspot with over 60 mammal species. It offers guided safaris, bird watching, and elephant rides. The best time to visit is from November to April when the weather is pleasant and wildlife sightings are frequent.',
+        majorAnimals: [
+            { id: 1, name: 'Hog Deer' },
+            { id: 2, name: 'Golden Langur' },
+            { id: 3, name: 'Asian Elephant' },
+            { id: 4, name: 'Bengal Tiger' },
+            { id: 5, name: 'Pygmy Hog' }
+        ],
+        additionalInfo: 'The park was on the UNESCO "World Heritage in Danger" list from 1992-2011 due to poaching and terrorist activities but has been successfully restored. It\'s the only park in India with all the "Big Five" of Assam: Rhino, Tiger, Elephant, Buffalo, and Swamp Deer.'
+    },
+    {
+        name: 'Sundarbans National Park, West Bengal',
+        description: 'A UNESCO World Heritage Site, Sundarbans covers 4,262 square kilometers and is part of the world\'s largest mangrove forest. Located in the delta formed by the Ganges, Brahmaputra, and Meghna rivers, it spans across India and Bangladesh.',
+        overview: 'Famous for its swimming tigers adapted to the mangrove ecosystem, the park can only be explored by boat. Watchtowers are set up for wildlife viewing. Best visited from September to March, avoiding the monsoon season.',
+        majorAnimals: [
+            { id: 1, name: 'Royal Bengal Tiger' },
+            { id: 2, name: 'Saltwater Crocodile' },
+            { id: 3, name: 'Fishing Cat' },
+            { id: 4, name: 'Ganges River Dolphin' },
+            { id: 5, name: 'Water Monitor Lizard' }
+        ],
+        additionalInfo: 'The word "Sundarbans" comes from "Sundari trees" (Heritiera fomes). The area has 102 islands, of which 54 are inhabited. Known for honey collection, a dangerous traditional occupation due to tiger attacks.'
+    },
+    {
+        name: 'Simlipal National Park, Odisha',
+        description: 'Covering approximately 2,750 square kilometers, Simlipal derives its name from the abundance of silk cotton (simul) trees. Located in the northern part of Odisha\'s Mayurbhanj district, it features dense deciduous forests, rolling meadows, and numerous waterfalls.',
+        overview: 'The park offers jeep safaris and nature trails through diverse landscapes. Known for its melanistic (black) tigers, though they are rarely sighted. Best visited from November to June.',
+        majorAnimals: [
+            { id: 1, name: 'Bengal Tiger (including melanistic)' },
+            { id: 2, name: 'Asian Elephant' },
+            { id: 3, name: 'Gaur (Indian Bison)' },
+            { id: 4, name: 'Chausingha (Four-horned Antelope)' },
+            { id: 5, name: 'Giant Squirrel' }
+        ],
+        additionalInfo: 'One of the oldest tiger reserves in India established in 1973. Home to 94 species of orchids. Houses three major tribes: Kolha, Santhala, and Bhumija who have their own unique cultural identities.'
+    },
+    {
+        name: 'Nandankanan Wildlife Sanctuary, Odisha',
+        description: 'Established in 1960, Nandankanan covers around 4 square kilometers adjacent to Chandaka-Dampara Wildlife Sanctuary near Bhubaneswar. Unlike other sanctuaries, it began as a zoo and was later accorded sanctuary status.',
+        overview: 'Known for its captive breeding programs for endangered species, especially the white tiger. The sanctuary features a botanical garden, reptile park, and a lake for boating. Open year-round, though winter (October to February) offers the most pleasant weather.',
+        majorAnimals: [
+            { id: 1, name: 'White Tiger' },
+            { id: 2, name: 'Melanistic Tiger' },
+            { id: 3, name: 'Indian Python' },
+            { id: 4, name: 'Pangolin' },
+            { id: 5, name: 'Lion-tailed Macaque' }
+        ],
+        additionalInfo: 'World\'s first captive breeding center for gharials. First zoo in India to join the World Association of Zoos and Aquariums (WAZA). Houses India\'s only walk-through aviary with exotic and endangered birds.'
+    }
+];
+
+// Southern India National Parks
+const southernIndia = [
+    {
+        name: 'Bandipur National Park, Karnataka',
+        description: 'Established in 1974 as a tiger reserve, Bandipur covers approximately 874 square kilometers in the foothills of the Nilgiris. It was once the private hunting reserve of the Maharaja of Mysore and is part of the Nilgiri Biosphere Reserve.',
+        overview: 'Known for its dry deciduous forests and open grasslands, Bandipur offers jeep safaris on designated routes. National Highway 67 runs through the park with strict night driving restrictions. Best visited from October to May.',
+        majorAnimals: [
+            { id: 1, name: 'Bengal Tiger' },
+            { id: 2, name: 'Indian Elephant' },
+            { id: 3, name: 'Gaur (Indian Bison)' },
+            { id: 4, name: 'Sloth Bear' },
+            { id: 5, name: 'Mugger Crocodile' }
+        ],
+        additionalInfo: 'Part of the largest protected area in southern India along with adjacent parks. Contains the highest density of wild elephants in south India. Features numerous ancient temples within and around the park.'
+    },
+    {
+        name: 'Nagarhole National Park, Karnataka',
+        description: 'Also known as Rajiv Gandhi National Park, Nagarhole covers 643 square kilometers and derives its name from the snake-like river (Nagara-hole) that winds through the park. It borders Bandipur and is part of the Nilgiri Biosphere Reserve.',
+        overview: 'Features moist deciduous forests with valuable timber species like teak and rosewood. The park offers boat rides on the Kabini reservoir in addition to jeep safaris. Best visited from October to May.',
+        majorAnimals: [
+            { id: 1, name: 'Bengal Tiger' },
+            { id: 2, name: 'Indian Leopard' },
+            { id: 3, name: 'Asian Elephant' },
+            { id: 4, name: 'Wild Dog (Dhole)' },
+            { id: 5, name: 'Indian Giant Flying Squirrel' }
+        ],
+        additionalInfo: 'Has one of the highest prey densities in Asia. Home to the indigenous Jenu Kuruba, Yerava, and Betta Kuruba tribes. Contains over 270 bird species including the endangered Oriental White-backed Vulture.'
+    },
+    {
+        name: 'Periyar Tiger Reserve, Kerala',
+        description: 'Established in 1934, Periyar spans approximately 925 square kilometers in the Western Ghats. At the center of the park is the man-made Periyar Lake formed by the Mullaperiyar Dam in 1895.',
+        overview: 'Unique for its lake-based wildlife viewing from boats. Also offers bamboo rafting, border hiking, and tiger trails guided by former poachers turned conservationists. Best visited from September to May.',
+        majorAnimals: [
+            { id: 1, name: 'Bengal Tiger' },
+            { id: 2, name: 'Indian Elephant' },
+            { id: 3, name: 'Nilgiri Langur' },
+            { id: 4, name: 'Sambar Deer' },
+            { id: 5, name: 'Great Hornbill' }
+        ],
+        additionalInfo: 'One of the few tiger reserves open year-round. Home to the unique "Tiger Trail" program where tourists are guided by former poachers. Contains numerous spice plantations in the buffer zones.'
+    },
+    {
+        name: 'Eravikulam National Park, Kerala',
+        description: 'Covering approximately 97 square kilometers in the Kannan Devan Hills, Eravikulam was established to protect the endangered Nilgiri Tahr. Located near Munnar, it features rolling grasslands and shola forests at elevations between 1,400 and 2,700 meters.',
+        overview: 'Known for its scenic beauty and the mass blooming of Neelakurinji flowers that occurs once every 12 years. The park offers a limited walking trail for tourists. Best visited from September to November and January to March, though closed during tahr calving season (January-February).',
+        majorAnimals: [
+            { id: 1, name: 'Nilgiri Tahr' },
+            { id: 2, name: 'Nilgiri Marten' },
+            { id: 3, name: 'Dusky Palm Squirrel' },
+            { id: 4, name: 'Atlas Moth' },
+            { id: 5, name: 'Nilgiri Wood Pigeon' }
+        ],
+        additionalInfo: 'Contains Anamudi Peak (2,695m), the highest peak in South India. The neelakurinji (Strobilanthes kunthiana) blooms once every 12 years, last bloomed in 2018. Previously owned by the British-owned Kannan Devan Hills Produce Company for tea plantations.'
+    },
+    {
+        name: 'Mudumalai National Park, Tamil Nadu',
+        description: 'Established in 1940, Mudumalai covers 321 square kilometers at the tri-junction of Tamil Nadu, Karnataka, and Kerala. It forms part of the Nilgiri Biosphere Reserve along with Bandipur and Nagarhole, creating one continuous protected area.',
+        overview: 'Features diverse habitats from moist deciduous to dry thorn forests. The park offers elephant safaris and jeep safaris through various zones. Best visited from January to May, though open year-round except during heavy monsoons.',
+        majorAnimals: [
+            { id: 1, name: 'Bengal Tiger' },
+            { id: 2, name: 'Indian Leopard' },
+            { id: 3, name: 'Indian Elephant' },
+            { id: 4, name: 'Indian Gaur' },
+            { id: 5, name: 'Slender Loris' }
+        ],
+        additionalInfo: 'The name "Mudumalai" means "Ancient Hill Range" in Tamil. Houses an elephant camp for tamed elephants rescued from captivity. The Moyar River which flows through the park forms a major elephant corridor.'
+    },
+    {
+        name: 'Anamalai Tiger Reserve, Tamil Nadu',
+        description: 'Previously known as Indira Gandhi Wildlife Sanctuary, this reserve spans around 958 square kilometers in the Anamalai Hills of the Western Ghats. It features diverse habitats ranging from tropical rainforests to high-altitude shola grasslands.',
+        overview: 'Known for its elephant population and the Top Slip area, which offers stunning views of the plains below. The reserve provides nature walks, elephant safaris, and van tours. Best visited from October to May.',
+        majorAnimals: [
+            { id: 1, name: 'Bengal Tiger' },
+            { id: 2, name: 'Lion-tailed Macaque' },
+            { id: 3, name: 'Nilgiri Langur' },
+            { id: 4, name: 'Giant Squirrel' },
+            { id: 5, name: 'Great Hornbill' }
+        ],
+        additionalInfo: 'Contains the highest diversity of hornbill species in India. Home to six indigenous tribal communities. Features artificial saltlicks created for herbivores and the Parambikulam Reservoir which attracts numerous water birds.'
+    },
+    {
+        name: 'Silent Valley National Park, Kerala',
+        description: 'Established in 1984 after a successful environmental movement prevented a hydroelectric project, Silent Valley covers approximately 90 square kilometers of pristine rainforest. Located in the Nilgiri hills, it represents one of the last undisturbed tracts of South Western Ghats mountain rain forests.',
+        overview: 'Known for its unique rainforest ecosystem and the Kunthi River that runs through it. The park offers limited ecotourism with guided trekking trails. Prior permission is required for visits, and overnight stays are not permitted. Best visited from October to March.',
+        majorAnimals: [
+            { id: 1, name: 'Lion-tailed Macaque' },
+            { id: 2, name: 'Nilgiri Langur' },
+            { id: 3, name: 'Nilgiri Marten' },
+            { id: 4, name: 'Tiger' },
+            { id: 5, name: 'Malabar Giant Squirrel' }
+        ],
+        additionalInfo: 'Named "Silent Valley" because of the absence of cicadas that are common in other forests. Contains over 1000 species of flowering plants including 108 orchid species. Home to more than 200 species of butterflies and 400 species of moths.'
+    }
+];
+
+// Additional Important Information for Wildlife Explorer Page
+
+const nationalParksInfo = {
+    bestTimeToVisit: {
+        northern: 'October to June, with different parks having specific optimal seasons based on weather and wildlife activity.',
+        western: 'October to March is generally the best period as summers are extremely hot in Gujarat and Maharashtra.',
+        central: 'October to June, with peak wildlife sightings often occurring in March to May during water scarcity.',
+        eastern: 'November to April, avoiding the monsoon season when many parks close or have limited access.',
+        southern: 'October to May, with specific variations by park. Some Kerala parks can be visited during post-monsoon season as well.'
+    },
+
+    safariTypes: [
+        { type: 'Jeep/Gypsy Safari', description: 'Most common safari option available in almost all parks. Usually 6-seater open vehicles with a naturalist/guide.' },
+        { type: 'Canter Safari', description: 'Larger open vehicles carrying 16-20 tourists, available in select parks like Ranthambore.' },
+        { type: 'Elephant Safari', description: 'Traditional safari on elephant back, available in parks like Kaziranga, Jim Corbett, and Mudumalai.' },
+        { type: 'Boat Safari', description: 'Available in water-rich parks like Periyar, Sundarbans, and certain zones of Kaziranga.' },
+        { type: 'Walking Safari', description: 'Limited availability in buffer zones of select parks like Satpura and Periyar, accompanied by armed guards.' },
+        { type: 'Night Safari', description: 'Rare, but offered in buffer zones of some parks like Pench and Satpura, focusing on nocturnal wildlife.' }
+    ],
+
+    conservationEfforts: {
+        project_tiger: 'Launched in 1973, Project Tiger is one of India\'s most successful conservation initiatives that has helped increase tiger populations from 1,827 in 1972 to over 3,000 in 2024.',
+        project_elephant: 'Started in 1992, this initiative focuses on protecting elephants, their habitats and corridors, and addressing human-elephant conflict.',
+        gharial_conservation: 'Focused on breeding and reintroduction of the critically endangered gharial crocodile, with centers in parks like Chambal and Nandankanan.',
+        vulture_recovery: 'Program to revive vulture populations that crashed due to the drug Diclofenac, with breeding centers in several states.',
+        one_horned_rhino: 'Special protection and habitat management for the vulnerable greater one-horned rhinoceros, primarily in Assam.'
+    },
+
+    visitorGuidelines: [
+        'Maintain silence during safaris to avoid disturbing wildlife',
+        'Stay inside vehicles at all times unless specifically permitted otherwise',
+        'Wear earthy/neutral colored clothing (avoid bright colors and perfumes)',
+        'No flash photography allowed',
+        'No feeding of animals',
+        'Carry water and sun protection',
+        'Follow all instructions from park guides and forest staff',
+        'Do not litter - carry back all trash',
+        'Maintain minimum safe distance from all animals',
+        'Book safaris well in advance (3-6 months) during peak season'
+    ],
+
+    uniqueFeatures: {
+        highest_tiger_density: 'Kaziranga and Bandhavgarh National Parks',
+        only_asiatic_lion_habitat: 'Gir National Park, Gujarat',
+        largest_mangrove: 'Sundarbans National Park, West Bengal',
+        highest_elevation: 'Hemis National Park, Ladakh (goes up to 6,000 meters)',
+        oldest_national_park: 'Jim Corbett National Park, established in 1936',
+        unesco_sites: [
+            'Kaziranga National Park',
+            'Manas National Park',
+            'Sundarbans National Park',
+            'Keoladeo National Park',
+            'Great Himalayan National Park',
+            'Nanda Devi National Park'
+        ]
+    },
+
+    endangered_species: [
+        { species: 'Bengal Tiger', status: 'Endangered', population: 'Around 3,000 in India' },
+        { species: 'Asiatic Lion', status: 'Endangered', population: 'Around 700, all in Gir' },
+        { species: 'One-horned Rhinoceros', status: 'Vulnerable', population: 'Around 3,700 in India' },
+        { species: 'Asiatic Elephant', status: 'Endangered', population: 'Around 27,000 in India' },
+        { species: 'Snow Leopard', status: 'Vulnerable', population: 'Estimated 500-700 in India' },
+        { species: 'Kashmir Stag (Hangul)', status: 'Critically Endangered', population: 'Less than 200' },
+        { species: 'Great Indian Bustard', status: 'Critically Endangered', population: 'Less than 150' },
+        { species: 'Gharial', status: 'Critically Endangered', population: 'Less than 250 breeding adults' },
+        { species: 'Lion-tailed Macaque', status: 'Endangered', population: 'Around 3,500' },
+        { species: 'Nilgiri Tahr', status: 'Endangered', population: 'Around 3,000' }
+    ],
+
+    photography_tips: [
+        'Use telephoto lenses (200-600mm) for wildlife photography',
+        'Morning and evening safaris offer the best light for photography',
+        'Set cameras to silent mode to avoid disturbing animals',
+        'Use fast shutter speeds (at least 1/500s) for moving wildlife',
+        'Consider bringing a monopod or beanbag for stability in safari vehicles',
+        'Remember that many parks charge additional fees for professional camera equipment'
+    ],
+
+    accommodationTypes: [
+        { type: 'Forest Department Rest Houses', description: 'Basic but authentic accommodation inside or near park boundaries, usually requiring advance booking through government portals.' },
+        { type: 'Luxury Wildlife Resorts', description: 'Private establishments offering premium accommodation with amenities like swimming pools, spa services, and naturalist-led activities.' },
+        { type: 'Eco Lodges', description: 'Sustainable accommodations with minimal environmental impact, often running on solar power and offering organic meals.' },
+        { type: 'Tented Camps', description: 'Semi-permanent or luxury tents offering a closer-to-nature experience while maintaining comfort.' },
+        { type: 'Homestays', description: 'Accommodations run by local communities, offering authentic cultural experiences and home-cooked meals.' }
+    ]
+};
+
+// Export all the data
+const indianNationalParksData = {
+    northernIndia,
+    westernIndia,
+    centralIndia,
+    easternIndia,
+    southernIndia,
+    nationalParksInfo
+};
