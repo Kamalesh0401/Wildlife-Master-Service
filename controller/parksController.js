@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Park = require('../models/parksModel');
 const Animal = require('../models/animalDataModel'); // Import Animal model for validation
+const Gallery = require('../models/galleryModel');
 
 // Get all parks
 exports.getAllParks = async (req, res) => {

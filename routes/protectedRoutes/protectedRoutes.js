@@ -6,6 +6,7 @@ const filesRoutes = require("./filesRoutes");
 const animalRoutes = require('./animalRoutes');
 const forestRoutes = require('./forestRoutes');
 const parkRoutes = require('./parkRoutes');
+const galleryRoutes = require('./galleryRoutes');
 const protect = require("../../middleware/authMiddleware");
 
 const express = require("express");
@@ -20,6 +21,7 @@ router.use("/files", protect, filesRoutes);
 router.use("/data", protect, animalRoutes);
 router.use('/forests', forestRoutes);
 router.use('/parks', parkRoutes);
+router.use('/gallery', galleryRoutes);
 
 
 
