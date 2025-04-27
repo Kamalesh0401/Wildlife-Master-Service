@@ -38,14 +38,14 @@ const forestSchema = new mongoose.Schema({
         },
     }],
     keySpecies: [{
-        name: {
-            type: String,
-            required: [true, 'Species name is required'],
-            trim: true,
-        },
-        image: {
-            type: String, // URL or path to species image
-            trim: true,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Animal',
+        validate: {
+            validator: async function (animalId) {
+                const animal = await mongoose.model('Animal').findById(animalId);
+                return !!animal;
+            },
+            message: 'Invalid animal ID: Animal does not exist',
         },
     }],
     createdAt: {

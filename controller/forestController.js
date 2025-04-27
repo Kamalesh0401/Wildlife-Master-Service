@@ -3,7 +3,7 @@ const Forest = require('../models/forestModel');
 // Get all forests
 exports.getAllForests = async (req, res) => {
     try {
-        const forests = await Forest.find().populate('gallery');
+        const forests = await Forest.find().populate('gallery').populate('keySpecies');
         res.status(200).json({
             status: 'success',
             results: forests.length,
@@ -21,7 +21,7 @@ exports.getAllForests = async (req, res) => {
 // Get a single forest by ID
 exports.getForestById = async (req, res) => {
     try {
-        const forest = await Forest.findById(req.params.id).populate('gallery');
+        const forest = await Forest.findById(req.params.id).populate('gallery').populate('keySpecies');
         if (!forest) {
             return res.status(404).json({
                 status: 'fail',

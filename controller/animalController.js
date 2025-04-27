@@ -828,6 +828,73 @@ exports.listAnimals = async (req, res) => {
     }
 };
 
+// Get animal by ID
+exports.getAnimalById = async (req, res) => {
+    try {
+        const animal = await Animal.findById(req.params.id);
+        if (!animal) {
+            return res.status(404).json({ message: 'Animal not found' });
+        }
+        res.status(200).json(animal);
+    } catch (error) {
+        res.status(500).json({ message: 'Server error', error: error.message });
+    }
+};
+
+// Get animal by name (queryName field)
+exports.getAnimalByName = async (req, res) => {
+    try {
+        const animal = await Animal.find();//{ name: req.params.name }
+        if (!animal) {
+            return res.status(404).json({ message: 'Animal not found' });
+        }
+        res.status(200).json(animal);
+    } catch (error) {
+        res.status(500).json({ message: 'Server error', error: error.message });
+    }
+};
+
+// Update animal by ID
+exports.updateAnimal = async (req, res) => {
+    try {
+        const animal = await Animal.findById(req.params.id);
+        if (!animal) {
+            return res.status(404).json({ message: 'Animal not found' });
+        }
+
+        // Update only the fields provided in the request body
+        const updatedData = {
+            name: req.body.name || animal.name,
+            scientificName: req.body.scientificName || animal.scientificName,
+            habitat: req.body.habitat || animal.habitat,
+            description: req.body.description || animal.description,
+            conservationStatus: req.body.conservationStatus || animal.conservationStatus,
+            populationTrend: req.body.populationTrend || animal.populationTrend,
+            geographicRange: req.body.geographicRange || animal.geographicRange,
+            threats: req.body.threats || animal.threats,
+            weight: req.body.weight || animal.weight,
+            lifespan: req.body.lifespan || animal.lifespan,
+            diet: req.body.diet || animal.diet,
+            foundIn: req.body.foundIn || animal.foundIn,
+            topSpeed: req.body.topSpeed || animal.topSpeed,
+            height: req.body.height || animal.height,
+            commonName: req.body.commonName || animal.commonName,
+            type: req.body.type || animal.type,
+            image: req.body.image || animal.image,
+            queryName: req.body.queryName || animal.queryName
+        };
+
+        const updatedAnimal = await Animal.findByIdAndUpdate(
+            req.params.id,
+            updatedData,
+            { new: true, runValidators: true }
+        );
+
+        res.status(200).json(updatedAnimal);
+    } catch (error) {
+        res.status(500).json({ message: 'Server error', error: error.message });
+    }
+};
 
 const transformAnimalData = (animal) => {
     const {

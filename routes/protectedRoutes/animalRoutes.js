@@ -6,6 +6,10 @@ const animalController = require('../../controller/animalController');
 router.post('/download', animalController.downloadAnimalData);
 
 // Route to list stored animals (optional, for testing)
-router.get('/', animalController.listAnimals);
+router.get('/list', animalController.listAnimals);
+
+router.get('/id/:id', animalController.getAnimalById); // Get animal by ID
+router.get('/name/:name', animalController.getAnimalByName); // Get animal by name
+router.put('/:id', animalController.updateAnimal); // Update animal by ID
 
 module.exports = router;

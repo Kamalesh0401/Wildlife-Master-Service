@@ -18,7 +18,7 @@ router.use("/blogs", protect, blogRoutes);
 router.use("/threats", protect, threatsRoutes);
 router.use("/endangered", protect, endangeredSpeciesRoutes);
 router.use("/files", protect, filesRoutes);
-router.use("/data", protect, animalRoutes);
+router.use("/animals", protect, animalRoutes);
 router.use('/forests', forestRoutes);
 router.use('/parks', parkRoutes);
 router.use('/gallery', galleryRoutes);
