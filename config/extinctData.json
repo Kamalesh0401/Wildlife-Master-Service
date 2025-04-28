@@ -1,0 +1,1313 @@
+[
+    {
+        "id": "dodo",
+        "name": "Dodo",
+        "scientificName": "Raphus cucullatus",
+        "habitat": "Forests of Mauritius",
+        "description": "The Dodo was a flightless bird endemic to the island of Mauritius. It had a large body, short wings, and a distinct hooked beak. The Dodo became extinct in the late 17th century due to human activities.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Mauritius"
+        ],
+        "threats": [
+            "Hunting by humans",
+            "Habitat destruction",
+            "Introduced species (rats, pigs, monkeys)"
+        ],
+        "weight": "10kg - 18kg (22lbs - 40lbs)",
+        "lifespan": "Unknown",
+        "diet": "Herbivore",
+        "foundIn": [
+            "Mauritius"
+        ],
+        "topSpeed": "Unknown",
+        "height": "Approximately 1m (3.3ft)",
+        "commonName": "Dodo",
+        "type": "Bird",
+        "image": "dodo",
+        "queryName": "Dodo"
+    },
+    {
+        "id": "woolly-mammoth",
+        "name": "Woolly Mammoth",
+        "scientificName": "Mammuthus primigenius",
+        "habitat": "Tundra and steppe",
+        "description": "The Woolly Mammoth was a species of mammoth that lived during the Pleistocene epoch and became extinct in the early Holocene. It was covered in fur and had long, curved tusks and small ears to minimize heat loss.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Northern Eurasia",
+            "North America"
+        ],
+        "threats": [
+            "Climate change",
+            "Human hunting"
+        ],
+        "weight": "4,000kg - 6,000kg (8,800lbs - 13,200lbs)",
+        "lifespan": "60 - 80 years",
+        "diet": "Herbivore",
+        "foundIn": [
+            "Northern Eurasia",
+            "North America"
+        ],
+        "topSpeed": "25 mph",
+        "height": "2.7m - 3.4m (9ft - 11ft)",
+        "commonName": "Woolly Mammoth",
+        "type": "Mammal",
+        "image": "woolly-mammoth",
+        "queryName": "Woolly Mammoth"
+    },
+    {
+        "id": "passenger-pigeon",
+        "name": "Passenger Pigeon",
+        "scientificName": "Ectopistes migratorius",
+        "habitat": "Deciduous forests",
+        "description": "The Passenger Pigeon was a North American bird that once constituted 25-40% of the total bird population of the United States. It was known for its massive migratory flocks that could darken the sky for days.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Eastern North America"
+        ],
+        "threats": [
+            "Commercial hunting",
+            "Habitat destruction"
+        ],
+        "weight": "260g - 340g (9oz - 12oz)",
+        "lifespan": "15 years",
+        "diet": "Omnivore",
+        "foundIn": [
+            "Eastern North America"
+        ],
+        "topSpeed": "60 mph",
+        "height": "Approximately 40cm (16in) long",
+        "commonName": "Passenger Pigeon",
+        "type": "Bird",
+        "image": "passenger-pigeon",
+        "queryName": "Passenger Pigeon"
+    },
+    {
+        "id": "great-auk",
+        "name": "Great Auk",
+        "scientificName": "Pinguinus impennis",
+        "habitat": "Rocky islands in the North Atlantic",
+        "description": "The Great Auk was a flightless seabird that became extinct in the mid-19th century. It was the only modern species in the genus Pinguinus and had a penguin-like appearance despite being unrelated to penguins.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "North Atlantic"
+        ],
+        "threats": [
+            "Hunting for food, feathers, and oil",
+            "Collection for museums and private collections"
+        ],
+        "weight": "5kg (11lbs)",
+        "lifespan": "Unknown",
+        "diet": "Carnivore (Fish)",
+        "foundIn": [
+            "North Atlantic coasts",
+            "Iceland",
+            "Greenland",
+            "Canada"
+        ],
+        "topSpeed": "Unknown on land, fast swimmer",
+        "height": "75cm - 85cm (30in - 33in)",
+        "commonName": "Great Auk",
+        "type": "Bird",
+        "image": "great-auk",
+        "queryName": "Great Auk"
+    },
+    {
+        "id": "quagga",
+        "name": "Quagga",
+        "scientificName": "Equus quagga quagga",
+        "habitat": "Grassy plains",
+        "description": "The Quagga was a subspecies of plains zebra that was once found in South Africa. It differed from other zebras in that it had stripes only on the front part of its body, with the rear parts being brown.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "South Africa"
+        ],
+        "threats": [
+            "Hunting",
+            "Habitat loss",
+            "Competition with livestock"
+        ],
+        "weight": "250kg - 300kg (550lbs - 660lbs)",
+        "lifespan": "25 - 30 years",
+        "diet": "Herbivore",
+        "foundIn": [
+            "South Africa"
+        ],
+        "topSpeed": "40 mph",
+        "height": "1.3m (4.3ft) at the shoulder",
+        "commonName": "Quagga",
+        "type": "Mammal",
+        "image": "quagga",
+        "queryName": "Quagga"
+    },
+    {
+        "id": "stellers-sea-cow",
+        "name": "Steller's Sea Cow",
+        "scientificName": "Hydrodamalis gigas",
+        "habitat": "Shallow coastal waters",
+        "description": "Steller's Sea Cow was a large sirenian discovered in 1741 and hunted to extinction by 1768. It was much larger than modern manatees and dugongs, growing up to 9 meters long and weighing 10 tons.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Bering Sea",
+            "Commander Islands"
+        ],
+        "threats": [
+            "Hunting by fur traders and sailors"
+        ],
+        "weight": "5,000kg - 10,000kg (11,000lbs - 22,000lbs)",
+        "lifespan": "Unknown, estimated 50-80 years",
+        "diet": "Herbivore (Kelp and seaweed)",
+        "foundIn": [
+            "North Pacific",
+            "Bering Sea"
+        ],
+        "topSpeed": "Unknown",
+        "height": "Length: 7m - 9m (23ft - 30ft)",
+        "commonName": "Steller's Sea Cow",
+        "type": "Mammal",
+        "image": "stellers-sea-cow",
+        "queryName": "Stellers Sea Cow"
+    },
+    {
+        "id": "pyrenean-ibex",
+        "name": "Pyrenean Ibex",
+        "scientificName": "Capra pyrenaica pyrenaica",
+        "habitat": "Rocky mountain areas",
+        "description": "The Pyrenean Ibex was a subspecies of the Iberian ibex that lived in the Pyrenees. It went extinct in 2000 but was briefly de-extinct through cloning in 2009, though the clone died shortly after birth.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Pyrenees Mountains"
+        ],
+        "threats": [
+            "Hunting",
+            "Competition with livestock",
+            "Disease",
+            "Habitat loss"
+        ],
+        "weight": "25kg - 80kg (55lbs - 176lbs)",
+        "lifespan": "12 - 15 years",
+        "diet": "Herbivore",
+        "foundIn": [
+            "Spain",
+            "France"
+        ],
+        "topSpeed": "Unknown",
+        "height": "70cm - 80cm (28in - 31in) at the shoulder",
+        "commonName": "Pyrenean Ibex",
+        "type": "Mammal",
+        "image": "pyrenean-ibex",
+        "queryName": "Pyrenean Ibex"
+    },
+    {
+        "id": "caribbean-monk-seal",
+        "name": "Caribbean Monk Seal",
+        "scientificName": "Neomonachus tropicalis",
+        "habitat": "Coastal waters and beaches",
+        "description": "The Caribbean Monk Seal was a species of seal native to the Caribbean Sea and Gulf of Mexico. It was declared extinct in 2008, the only seal species to go extinct due to human causes.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Caribbean Sea",
+            "Gulf of Mexico"
+        ],
+        "threats": [
+            "Hunting for oil",
+            "Overfishing of food sources",
+            "Habitat disturbance"
+        ],
+        "weight": "170kg - 270kg (375lbs - 600lbs)",
+        "lifespan": "Unknown",
+        "diet": "Carnivore (Fish, eels, octopus)",
+        "foundIn": [
+            "Caribbean islands",
+            "Mexico",
+            "United States (Florida)"
+        ],
+        "topSpeed": "Unknown",
+        "height": "Length: 2.1m - 2.4m (7ft - 8ft)",
+        "commonName": "Caribbean Monk Seal",
+        "type": "Mammal",
+        "image": "caribbean-monk-seal",
+        "queryName": "Caribbean Monk Seal"
+    },
+    {
+        "id": "west-african-black-rhinoceros",
+        "name": "West African Black Rhinoceros",
+        "scientificName": "Diceros bicornis longipes",
+        "habitat": "Savanna and shrublands",
+        "description": "The West African Black Rhinoceros was a subspecies of the black rhinoceros that was declared extinct in 2011. It had two horns and a prehensile upper lip for grasping vegetation.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "West Africa"
+        ],
+        "threats": [
+            "Poaching for horns",
+            "Habitat loss"
+        ],
+        "weight": "800kg - 1,400kg (1,760lbs - 3,090lbs)",
+        "lifespan": "35 - 50 years",
+        "diet": "Herbivore",
+        "foundIn": [
+            "Cameroon",
+            "Chad",
+            "Central African Republic",
+            "Sudan"
+        ],
+        "topSpeed": "55 km/h (34 mph)",
+        "height": "1.4m - 1.8m (4.6ft - 5.9ft) at shoulder",
+        "commonName": "West African Black Rhinoceros",
+        "type": "Mammal",
+        "image": "west-african-black-rhinoceros",
+        "queryName": "West African Black Rhinoceros"
+    },
+    {
+        "id": "pinta-island-tortoise",
+        "name": "Pinta Island Tortoise",
+        "scientificName": "Chelonoidis abingdonii",
+        "habitat": "Dry lowlands and highlands",
+        "description": "The Pinta Island Tortoise was a species of Galápagos tortoise native to Ecuador's Pinta Island. The last known individual, Lonesome George, died in 2012, making the species extinct.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Pinta Island, Galápagos"
+        ],
+        "threats": [
+            "Hunting by sailors and settlers",
+            "Introduced goats destroying habitat",
+            "Collection for museums"
+        ],
+        "weight": "100kg - 200kg (220lbs - 440lbs)",
+        "lifespan": "100+ years",
+        "diet": "Herbivore",
+        "foundIn": [
+            "Pinta Island, Galápagos, Ecuador"
+        ],
+        "topSpeed": "0.3 km/h (0.2 mph)",
+        "height": "Shell height: 90cm - 120cm (3ft - 4ft)",
+        "commonName": "Pinta Island Tortoise",
+        "type": "Reptile",
+        "image": "pinta-island-tortoise",
+        "queryName": "Pinta Island Tortoise"
+    },
+    {
+        "id": "irish-elk",
+        "name": "Irish Elk",
+        "scientificName": "Megaloceros giganteus",
+        "habitat": "Open woodlands and grasslands",
+        "description": "The Irish Elk was one of the largest deer that ever lived, characterized by enormous antlers that spanned up to 3.65 meters. Despite its name, it was not exclusively Irish nor a true elk, but rather a large extinct deer.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Europe",
+            "Asia",
+            "Northern Africa"
+        ],
+        "threats": [
+            "Climate change",
+            "Habitat loss"
+        ],
+        "weight": "540kg - 700kg (1,190lbs - 1,540lbs)",
+        "lifespan": "Unknown",
+        "diet": "Herbivore",
+        "foundIn": [
+            "Europe",
+            "Asia",
+            "Northern Africa"
+        ],
+        "topSpeed": "Unknown",
+        "height": "2.1m (7ft) at the shoulder",
+        "commonName": "Irish Elk",
+        "type": "Mammal",
+        "image": "irish-elk",
+        "queryName": "Irish Elk"
+    },
+    {
+        "id": "moa",
+        "name": "Moa",
+        "scientificName": "Dinornithiformes (order)",
+        "habitat": "Forests and grasslands",
+        "description": "Moas were nine species of flightless birds endemic to New Zealand. They ranged in size from that of a turkey to larger than an ostrich, with some standing up to 3.6m tall. They had no wings, not even vestigial wings.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "New Zealand"
+        ],
+        "threats": [
+            "Hunting by Māori",
+            "Habitat destruction"
+        ],
+        "weight": "20kg - 250kg (44lbs - 550lbs) depending on species",
+        "lifespan": "Unknown",
+        "diet": "Herbivore",
+        "foundIn": [
+            "New Zealand"
+        ],
+        "topSpeed": "Unknown",
+        "height": "1.3m - 3.6m (4.3ft - 12ft) depending on species",
+        "commonName": "Moa",
+        "type": "Bird",
+        "image": "moa",
+        "queryName": "Moa"
+    },
+    {
+        "id": "labrador-duck",
+        "name": "Labrador Duck",
+        "scientificName": "Camptorhynchus labradorius",
+        "habitat": "Coastal waters",
+        "description": "The Labrador Duck was a North American sea duck that became extinct in the late 19th century. It had a distinctive black and white plumage and a bill specialized for mollusk feeding.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Northeastern North America"
+        ],
+        "threats": [
+            "Hunting",
+            "Egg collection",
+            "Possibly decreased food availability"
+        ],
+        "weight": "Unknown",
+        "lifespan": "Unknown",
+        "diet": "Carnivore (Mollusks and small crustaceans)",
+        "foundIn": [
+            "Canada",
+            "United States (Eastern seaboard)"
+        ],
+        "topSpeed": "Unknown",
+        "height": "Length: 51cm - 56cm (20in - 22in)",
+        "commonName": "Labrador Duck",
+        "type": "Bird",
+        "image": "labrador-duck",
+        "queryName": "Labrador Duck"
+    },
+    {
+        "id": "baiji-river-dolphin",
+        "name": "Baiji River Dolphin",
+        "scientificName": "Lipotes vexillifer",
+        "habitat": "Freshwater rivers",
+        "description": "The Baiji River Dolphin was a freshwater dolphin native to the Yangtze River in China. It was declared functionally extinct in 2006, making it the first dolphin species driven to extinction by human activity.",
+        "conservationStatus": "Extinct (Functionally)",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Yangtze River, China"
+        ],
+        "threats": [
+            "Fishing (bycatch)",
+            "Boat collisions",
+            "Pollution",
+            "Dam construction"
+        ],
+        "weight": "135kg - 230kg (300lbs - 510lbs)",
+        "lifespan": "24 years",
+        "diet": "Carnivore (Fish)",
+        "foundIn": [
+            "China"
+        ],
+        "topSpeed": "60 km/h (37 mph)",
+        "height": "Length: 1.4m - 2.5m (4.6ft - 8.2ft)",
+        "commonName": "Baiji River Dolphin",
+        "type": "Mammal",
+        "image": "baiji-river-dolphin",
+        "queryName": "Baiji River Dolphin"
+    },
+    {
+        "id": "atlas-bear",
+        "name": "Atlas Bear",
+        "scientificName": "Ursus arctos crowtheri",
+        "habitat": "Mountain forests",
+        "description": "The Atlas Bear was a subspecies of brown bear native to the Atlas Mountains in North Africa. It was the only bear native to Africa in modern times and went extinct in the late 19th century.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Atlas Mountains, North Africa"
+        ],
+        "threats": [
+            "Hunting",
+            "Capture for Roman games",
+            "Habitat loss"
+        ],
+        "weight": "130kg - 240kg (290lbs - 530lbs)",
+        "lifespan": "Unknown, likely 20-30 years",
+        "diet": "Omnivore",
+        "foundIn": [
+            "Morocco",
+            "Algeria",
+            "Tunisia",
+            "Libya"
+        ],
+        "topSpeed": "Unknown, likely 30-40 km/h (18-25 mph)",
+        "height": "Unknown",
+        "commonName": "Atlas Bear",
+        "type": "Mammal",
+        "image": "atlas-bear",
+        "queryName": "Atlas Bear"
+    },
+    {
+        "id": "toolache-wallaby",
+        "name": "Toolache Wallaby",
+        "scientificName": "Macropus greyi",
+        "habitat": "Swampy grasslands",
+        "description": "The Toolache Wallaby was a marsupial native to southeastern Australia. It was known for its elegant appearance and soft fur, which contributed to its extinction through hunting by the 1940s.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Southeastern Australia"
+        ],
+        "threats": [
+            "Hunting for fur",
+            "Habitat conversion to agriculture",
+            "Predation by introduced foxes"
+        ],
+        "weight": "8kg - 12kg (18lbs - 26lbs)",
+        "lifespan": "Unknown",
+        "diet": "Herbivore",
+        "foundIn": [
+            "Australia (South Australia, Victoria)"
+        ],
+        "topSpeed": "48 km/h (30 mph)",
+        "height": "80cm - 90cm (31in - 35in) including tail",
+        "commonName": "Toolache Wallaby",
+        "type": "Mammal",
+        "image": "toolache-wallaby",
+        "queryName": "Toolache Wallaby"
+    },
+    {
+        "id": "bluebuck",
+        "name": "Bluebuck",
+        "scientificName": "Hippotragus leucophaeus",
+        "habitat": "Coastal plains and mountains",
+        "description": "The Bluebuck was a species of antelope native to South Africa. It was the first large African mammal to become extinct in historical times, disappearing in the late 18th century.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "South Africa (Western Cape)"
+        ],
+        "threats": [
+            "Hunting",
+            "Habitat loss to agriculture",
+            "Competition with livestock"
+        ],
+        "weight": "160kg - 240kg (350lbs - 530lbs)",
+        "lifespan": "Unknown",
+        "diet": "Herbivore",
+        "foundIn": [
+            "South Africa"
+        ],
+        "topSpeed": "Unknown",
+        "height": "1.1m - 1.2m (3.6ft - 3.9ft) at the shoulder",
+        "commonName": "Bluebuck",
+        "type": "Mammal",
+        "image": "bluebuck",
+        "queryName": "Bluebuck"
+    },
+    {
+        "id": "aurochs",
+        "name": "Aurochs",
+        "scientificName": "Bos primigenius",
+        "habitat": "Forests, open woodlands, and grasslands",
+        "description": "The Aurochs was a species of large wild cattle that inhabited Europe, Asia, and North Africa. It is the ancestor of domestic cattle and went extinct in 1627. It was characterized by long horns and a robust build.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Europe",
+            "Asia",
+            "North Africa"
+        ],
+        "threats": [
+            "Hunting",
+            "Habitat loss",
+            "Domestication"
+        ],
+        "weight": "700kg - 1,000kg (1,500lbs - 2,200lbs)",
+        "lifespan": "15 - 25 years",
+        "diet": "Herbivore",
+        "foundIn": [
+            "Europe",
+            "Asia",
+            "North Africa"
+        ],
+        "topSpeed": "Unknown",
+        "height": "1.8m (5.9ft) at the shoulder",
+        "commonName": "Aurochs",
+        "type": "Mammal",
+        "image": "aurochs",
+        "queryName": "Aurochs"
+    },
+    {
+        "id": "schomburgks-deer",
+        "name": "Schomburgk's Deer",
+        "scientificName": "Rucervus schomburgki",
+        "habitat": "Swampy plains",
+        "description": "Schomburgk's Deer was a species of deer native to Thailand. It was characterized by its distinctive basket-shaped antlers and went extinct in 1938 due to hunting and habitat conversion.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Thailand"
+        ],
+        "threats": [
+            "Hunting",
+            "Habitat conversion to rice paddies"
+        ],
+        "weight": "100kg - 120kg (220lbs - 265lbs)",
+        "lifespan": "Unknown",
+        "diet": "Herbivore",
+        "foundIn": [
+            "Thailand"
+        ],
+        "topSpeed": "Unknown",
+        "height": "1m (3.3ft) at the shoulder",
+        "commonName": "Schomburgk's Deer",
+        "type": "Mammal",
+        "image": "schomburgks-deer",
+        "queryName": "Schomburgks Deer"
+    },
+    {
+        "id": "broad-faced-potoroo",
+        "name": "Broad-faced Potoroo",
+        "scientificName": "Potorous platyops",
+        "habitat": "Coastal shrublands",
+        "description": "The Broad-faced Potoroo was a small marsupial native to Australia. It went extinct in the late 19th century, possibly due to predation by introduced foxes and cats and habitat changes.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Western Australia"
+        ],
+        "threats": [
+            "Predation by introduced species",
+            "Habitat alteration"
+        ],
+        "weight": "Approximately 1kg (2.2lbs)",
+        "lifespan": "Unknown",
+        "diet": "Omnivore (Fungi, insects, plant material)",
+        "foundIn": [
+            "Australia"
+        ],
+        "topSpeed": "Unknown",
+        "height": "Length: 30cm - 40cm (12in - 16in) including tail",
+        "commonName": "Broad-faced Potoroo",
+        "type": "Mammal",
+        "image": "broad-faced-potoroo",
+        "queryName": "Broad-faced Potoroo"
+    },
+    {
+        "id": "caspian-tiger",
+        "name": "Caspian Tiger",
+        "scientificName": "Panthera tigris virgata",
+        "habitat": "River valleys and forests",
+        "description": "The Caspian Tiger was a subspecies of tiger that ranged from Eastern Turkey to Northwestern China. It went extinct in the 1970s due to hunting and habitat loss.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Central Asia",
+            "Caucasus",
+            "Middle East",
+            "Western China"
+        ],
+        "threats": [
+            "Hunting",
+            "Habitat destruction",
+            "Reduction of prey"
+        ],
+        "weight": "170kg - 240kg (375lbs - 530lbs)",
+        "lifespan": "15 - 20 years",
+        "diet": "Carnivore",
+        "foundIn": [
+            "Iran",
+            "Iraq",
+            "Turkey",
+            "Central Asian countries",
+            "Northwestern China"
+        ],
+        "topSpeed": "65 km/h (40 mph)",
+        "height": "90cm - 106cm (3ft - 3.5ft) at the shoulder",
+        "commonName": "Caspian Tiger",
+        "type": "Mammal",
+        "image": "caspian-tiger",
+        "queryName": "Caspian Tiger"
+    },
+    {
+        "id": "japanese-sea-lion",
+        "name": "Japanese Sea Lion",
+        "scientificName": "Zalophus japonicus",
+        "habitat": "Coastal waters and rocky shores",
+        "description": "The Japanese Sea Lion was a sea lion that inhabited the Sea of Japan. It was hunted to extinction for its oil, skin, and organs, with the last confirmed sighting in the 1950s.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Sea of Japan"
+        ],
+        "threats": [
+            "Commercial hunting",
+            "Military use for target practice",
+            "Overfishing of food sources"
+        ],
+        "weight": "Males: 450kg - 560kg (990lbs - 1,230lbs), Females: 110kg - 150kg (240lbs - 330lbs)",
+        "lifespan": "Unknown",
+        "diet": "Carnivore (Fish, squid)",
+        "foundIn": [
+            "Japan",
+            "Korea",
+            "China"
+        ],
+        "topSpeed": "Unknown",
+        "height": "Length: Males 2.3m - 2.5m (7.5ft - 8.2ft), Females 1.4m - 1.6m (4.6ft - 5.2ft)",
+        "commonName": "Japanese Sea Lion",
+        "type": "Mammal",
+        "image": "japanese-sea-lion",
+        "queryName": "Japanese Sea Lion"
+    },
+    {
+        "id": "guam-kingfisher",
+        "name": "Guam Kingfisher",
+        "scientificName": "Todiramphus cinnamominus",
+        "habitat": "Forests",
+        "description": "The Guam Kingfisher is a species of kingfisher endemic to Guam. It is extinct in the wild since the 1980s due to predation by the introduced brown tree snake, but survives in captivity.",
+        "conservationStatus": "Extinct in the Wild",
+        "populationTrend": "Extinct in Wild, Stable in Captivity",
+        "geographicRange": [
+            "Guam (historically)"
+        ],
+        "threats": [
+            "Predation by brown tree snake",
+            "Habitat destruction"
+        ],
+        "weight": "40g - 60g (1.4oz - 2.1oz)",
+        "lifespan": "15 years",
+        "diet": "Carnivore (Insects, lizards, small vertebrates)",
+        "foundIn": [
+            "Guam (historically)"
+        ],
+        "topSpeed": "Unknown",
+        "height": "Length: 20cm (8in)",
+        "commonName": "Guam Kingfisher",
+        "type": "Bird",
+        "image": "guam-kingfisher",
+        "queryName": "Guam Kingfisher"
+    },
+    {
+        "id": "cuban-macaw",
+        "name": "Cuban Macaw",
+        "scientificName": "Ara tricolor",
+        "habitat": "Forests and woodlands",
+        "description": "The Cuban Macaw was a species of macaw native to Cuba and possibly the Isla de la Juventud. It went extinct in the late 19th century due to deforestation and hunting.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Cuba"
+        ],
+        "threats": [
+            "Deforestation",
+            "Hunting",
+            "Collection for pet trade"
+        ],
+        "weight": "Unknown",
+        "lifespan": "Unknown",
+        "diet": "Herbivore (Seeds, nuts, fruits)",
+        "foundIn": [
+            "Cuba"
+        ],
+        "topSpeed": "Unknown",
+        "height": "Length: 45cm - 50cm (18in - 20in)",
+        "commonName": "Cuban Macaw",
+        "type": "Bird",
+        "image": "cuban-macaw",
+        "queryName": "Cuban Macaw"
+    },
+    {
+        "id": "elephant-bird",
+        "name": "Elephant Bird",
+        "scientificName": "Aepyornis maximus",
+        "habitat": "Forests and grasslands",
+        "description": "The Elephant Bird was a massive flightless bird native to Madagascar. It was the largest bird to have ever lived, standing up to 3 meters tall and weighing up to 500kg. It went extinct around 1000-1200 CE.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Madagascar"
+        ],
+        "threats": [
+            "Human hunting",
+            "Egg collection",
+            "Habitat loss"
+        ],
+        "weight": "400kg - 500kg (880lbs - 1,100lbs)",
+        "lifespan": "Unknown",
+        "diet": "Herbivore",
+        "foundIn": [
+            "Madagascar"
+        ],
+        "topSpeed": "Unknown",
+        "height": "3m (10ft)",
+        "commonName": "Elephant Bird",
+        "type": "Bird",
+        "image": "elephant-bird",
+        "queryName": "Elephant Bird"
+    },
+    {
+        "id": "cuban-red-macaw",
+        "name": "Cuban Red Macaw",
+        "scientificName": "Ara tricolor",
+        "habitat": "Forests and woodlands",
+        "description": "The Cuban Red Macaw (same as Cuban Macaw) was a species of macaw native to Cuba. It had a red head, blue and red wings, and a yellow nape. It went extinct in the late 19th century due to deforestation and hunting.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Cuba"
+        ],
+        "threats": [
+            "Deforestation",
+            "Hunting",
+            "Collection for pet trade"
+        ],
+        "weight": "Unknown",
+        "lifespan": "Unknown",
+        "diet": "Herbivore (Seeds, nuts, fruits)",
+        "foundIn": [
+            "Cuba"
+        ],
+        "topSpeed": "Unknown",
+        "height": "Length: 45cm - 50cm (18in - 20in)",
+        "commonName": "Cuban Red Macaw",
+        "type": "Bird",
+        "image": "cuban-red-macaw",
+        "queryName": "Cuban Red Macaw"
+    },
+    {
+        "id": "hokkaido-wolf",
+        "name": "Hokkaido Wolf",
+        "scientificName": "Canis lupus hattai",
+        "habitat": "Forests and mountains",
+        "description": "The Hokkaido Wolf was a subspecies of gray wolf that inhabited the island of Hokkaido in Japan. It was smaller than other wolf subspecies and went extinct in 1889 due to poisoning campaigns and habitat loss.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Hokkaido, Japan"
+        ],
+        "threats": [
+            "Poisoning campaigns",
+            "Habitat destruction",
+            "Hunting"
+        ],
+        "weight": "20kg - 30kg (44lbs - 66lbs)",
+        "lifespan": "Unknown",
+        "diet": "Carnivore",
+        "foundIn": [
+            "Japan"
+        ],
+        "topSpeed": "Unknown",
+        "height": "Smaller than typical gray wolves",
+        "commonName": "Hokkaido Wolf",
+        "type": "Mammal",
+        "image": "hokkaido-wolf",
+        "queryName": "Hokkaido Wolf"
+    },
+    {
+        "id": "pleistocene-cheetah",
+        "name": "Pleistocene Cheetah",
+        "scientificName": "Acinonyx pardinensis",
+        "habitat": "Open plains and savannas",
+        "description": "The Pleistocene Cheetah was a prehistoric species of big cat that was larger and more robust than modern cheetahs. It lived in Europe, Asia, and North America during the Pleistocene epoch.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Europe",
+            "Asia",
+            "North America"
+        ],
+        "threats": [
+            "Climate change",
+            "Competition with other predators",
+            "Prey scarcity"
+        ],
+        "weight": "70kg - 90kg (154lbs - 198lbs)",
+        "lifespan": "Unknown",
+        "diet": "Carnivore",
+        "foundIn": [
+            "Europe",
+            "Asia",
+            "North America"
+        ],
+        "topSpeed": "Estimated 100 km/h (62 mph)",
+        "height": "85cm - 100cm (33in - 39in) at the shoulder",
+        "commonName": "Pleistocene Cheetah",
+        "type": "Mammal",
+        "image": "pleistocene-cheetah",
+        "queryName": "Pleistocene Cheetah"
+    },
+    {
+        "id": "florida-black-wolf",
+        "name": "Florida Black Wolf",
+        "scientificName": "Canis rufus floridanus",
+        "habitat": "Forests and swamplands",
+        "description": "The Florida Black Wolf was a subspecies of red wolf native to Florida. It was declared extinct in 1917 due to hunting and habitat destruction.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Florida, United States"
+        ],
+        "threats": [
+            "Hunting",
+            "Habitat destruction",
+            "Persecution"
+        ],
+        "weight": "25kg - 40kg (55lbs - 88lbs)",
+        "lifespan": "Unknown",
+        "diet": "Carnivore",
+        "foundIn": [
+            "United States (Florida)"
+        ],
+        "topSpeed": "Unknown",
+        "height": "60cm - 80cm (24in - 31in) at the shoulder",
+        "commonName": "Florida Black Wolf",
+        "type": "Mammal",
+        "image": "florida-black-wolf",
+        "queryName": "Florida Black Wolf"
+    },
+    {
+        "id": "mexican-grizzly-bear",
+        "name": "Mexican Grizzly Bear",
+        "scientificName": "Ursus arctos nelsoni",
+        "habitat": "Mountain forests and grasslands",
+        "description": "The Mexican Grizzly Bear was a subspecies of brown bear native to Mexico. It was smaller than other grizzlies and had silver-tipped fur. It went extinct in the 1960s due to hunting, trapping, and poisoning.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Mexico"
+        ],
+        "threats": [
+            "Hunting",
+            "Trapping",
+            "Poisoning",
+            "Habitat destruction"
+        ],
+        "weight": "180kg - 270kg (400lbs - 600lbs)",
+        "lifespan": "Unknown",
+        "diet": "Omnivore",
+        "foundIn": [
+            "Mexico"
+        ],
+        "topSpeed": "56 km/h (35 mph)",
+        "height": "1.2m - 1.8m (4ft - 6ft) when standing",
+        "commonName": "Mexican Grizzly Bear",
+        "type": "Mammal",
+        "image": "mexican-grizzly-bear",
+        "queryName": "Mexican Grizzly Bear"
+    },
+    {
+        "id": "falkland-islands-wolf",
+        "name": "Falkland Islands Wolf",
+        "scientificName": "Dusicyon australis",
+        "habitat": "Grasslands and coastal areas",
+        "description": "The Falkland Islands Wolf was the only native land mammal of the Falkland Islands. Also known as the warrah, it was hunted to extinction in the 1870s, just a few decades after it was first scientifically described.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Falkland Islands"
+        ],
+        "threats": [
+            "Hunting",
+            "Poisoning by settlers"
+        ],
+        "weight": "23kg - 30kg (51lbs - 66lbs)",
+        "lifespan": "Unknown",
+        "diet": "Carnivore",
+        "foundIn": [
+            "Falkland Islands"
+        ],
+        "topSpeed": "Unknown",
+        "height": "60cm (24in) at the shoulder",
+        "commonName": "Falkland Islands Wolf",
+        "type": "Mammal",
+        "image": "falkland-islands-wolf",
+        "queryName": "Falkland Islands Wolf"
+    },
+    {
+        "id": "new-zealand-greater-short-tailed-bat",
+        "name": "New Zealand Greater Short-tailed Bat",
+        "scientificName": "Mystacina robusta",
+        "habitat": "Forests",
+        "description": "The New Zealand Greater Short-tailed Bat was a species of bat endemic to New Zealand. It was unusual among bats for spending much of its time on the ground. The last confirmed sighting was in 1967.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "New Zealand"
+        ],
+        "threats": [
+            "Predation by introduced rats",
+            "Habitat destruction"
+        ],
+        "weight": "25g - 35g (0.9oz - 1.2oz)",
+        "lifespan": "Unknown",
+        "diet": "Omnivore (Insects, nectar, pollen, fruit)",
+        "foundIn": [
+            "New Zealand"
+        ],
+        "topSpeed": "Unknown",
+        "height": "Wingspan: 30cm (12in)",
+        "commonName": "New Zealand Greater Short-tailed Bat",
+        "type": "Mammal",
+        "image": "new-zealand-greater-short-tailed-bat",
+        "queryName": "New Zealand Greater Short-tailed Bat"
+    },
+    {
+        "id": "king-island-emu",
+        "name": "King Island Emu",
+        "scientificName": "Dromaius novaehollandiae minor",
+        "habitat": "Scrubland and forests",
+        "description": "The King Island Emu was a subspecies of emu that lived on King Island between Tasmania and Australia. It was smaller than the mainland emu and went extinct in the early 19th century due to hunting.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "King Island, Australia"
+        ],
+        "threats": [
+            "Hunting",
+            "Habitat destruction"
+        ],
+        "weight": "Approximately 45kg (100lbs)",
+        "lifespan": "Unknown",
+        "diet": "Omnivore",
+        "foundIn": [
+            "Australia (King Island)"
+        ],
+        "topSpeed": "Unknown",
+        "height": "1.5m (5ft)",
+        "commonName": "King Island Emu",
+        "type": "Bird",
+        "image": "king-island-emu",
+        "queryName": "King Island Emu"
+    },
+    {
+        "id": "japanese-river-otter",
+        "name": "Japanese River Otter",
+        "scientificName": "Lutra lutra whiteleyi",
+        "habitat": "Rivers, lakes, and coastal areas",
+        "description": "The Japanese River Otter was a subspecies of the Eurasian otter native to Japan. It was declared extinct in 2012, with the last confirmed sighting in 1979. Its extinction was due to hunting for its fur and habitat destruction.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Japan"
+        ],
+        "threats": [
+            "Hunting for fur",
+            "Habitat destruction",
+            "Water pollution"
+        ],
+        "weight": "5kg - 14kg (11lbs - 31lbs)",
+        "lifespan": "Unknown",
+        "diet": "Carnivore (Fish, crustaceans)",
+        "foundIn": [
+            "Japan"
+        ],
+        "topSpeed": "Unknown",
+        "height": "Length: 65cm - 80cm (26in - 31in)",
+        "commonName": "Japanese River Otter",
+        "type": "Mammal",
+        "image": "japanese-river-otter",
+        "queryName": "Japanese River Otter"
+    },
+    {
+        "id": "eastern-cougar",
+        "name": "Eastern Cougar",
+        "scientificName": "Puma concolor couguar",
+        "habitat": "Forests and mountains",
+        "description": "The Eastern Cougar was a subspecies of cougar that once roamed eastern North America. It was officially declared extinct by the US Fish and Wildlife Service in 2018, although it likely disappeared much earlier.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Eastern North America"
+        ],
+        "threats": [
+            "Hunting",
+            "Habitat destruction",
+            "Prey depletion"
+        ],
+        "weight": "36kg - 70kg (80lbs - 154lbs)",
+        "lifespan": "Unknown",
+        "diet": "Carnivore",
+        "foundIn": [
+            "United States (Eastern)",
+            "Canada (Eastern)"
+        ],
+        "topSpeed": "64 km/h (40 mph)",
+        "height": "60cm - 90cm (24in - 35in) at shoulder",
+        "commonName": "Eastern Cougar",
+        "type": "Mammal",
+        "image": "eastern-cougar",
+        "queryName": "Eastern Cougar"
+    },
+    {
+        "id": "extinct-honshu-wolf",
+        "name": "Honshu Wolf",
+        "scientificName": "Canis lupus hodophilax",
+        "habitat": "Forests and mountains",
+        "description": "The Honshu Wolf was a subspecies of gray wolf that inhabited the islands of Honshu, Shikoku, and Kyushu in Japan. It was the smallest wolf subspecies and went extinct in 1905 due to rabies and human persecution.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Japan (Honshu, Shikoku, Kyushu)"
+        ],
+        "threats": [
+            "Disease (rabies)",
+            "Hunting",
+            "Poisoning campaigns"
+        ],
+        "weight": "12kg - 15kg (26lbs - 33lbs)",
+        "lifespan": "Unknown",
+        "diet": "Carnivore",
+        "foundIn": [
+            "Japan"
+        ],
+        "topSpeed": "Unknown",
+        "height": "35cm - 45cm (14in - 18in) at the shoulder",
+        "commonName": "Honshu Wolf",
+        "type": "Mammal",
+        "image": "honshu-wolf",
+        "queryName": "Extinct Honshu Wolf"
+    },
+    {
+        "id": "stephens-island-wren",
+        "name": "Stephens Island Wren",
+        "scientificName": "Traversia lyalli",
+        "habitat": "Rocky areas and forests",
+        "description": "The Stephens Island Wren was a small, flightless bird endemic to Stephens Island in New Zealand. It became extinct shortly after its discovery in 1894, largely due to predation by a lighthouse keeper's cat.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Stephens Island, New Zealand"
+        ],
+        "threats": [
+            "Predation by introduced cats",
+            "Habitat destruction"
+        ],
+        "weight": "Approximately 20g (0.7oz)",
+        "lifespan": "Unknown",
+        "diet": "Insectivore",
+        "foundIn": [
+            "New Zealand (Stephens Island)"
+        ],
+        "topSpeed": "Unknown",
+        "height": "Length: 10cm (4in)",
+        "commonName": "Stephens Island Wren",
+        "type": "Bird",
+        "image": "stephens-island-wren",
+        "queryName": "Stephens Island Wren"
+    },
+    {
+        "id": "harpagornis",
+        "name": "Haast's Eagle",
+        "scientificName": "Hieraaetus moorei",
+        "habitat": "Forests and mountains",
+        "description": "Haast's Eagle was the largest eagle known to have existed, with a wingspan of up to 3 meters. Endemic to New Zealand, it hunted large flightless birds including moa. It went extinct around 1400 CE following the extinction of its prey species.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "New Zealand"
+        ],
+        "threats": [
+            "Loss of prey species (moa)",
+            "Hunting by humans"
+        ],
+        "weight": "10kg - 15kg (22lbs - 33lbs)",
+        "lifespan": "Unknown",
+        "diet": "Carnivore",
+        "foundIn": [
+            "New Zealand"
+        ],
+        "topSpeed": "Unknown, but capable of high-speed dives",
+        "height": "Wingspan: 2.6m - 3m (8.5ft - 10ft)",
+        "commonName": "Haast's Eagle",
+        "type": "Bird",
+        "image": "haasts-eagle",
+        "queryName": "Harpagornis"
+    },
+    {
+        "id": "giant-short-faced-bear",
+        "name": "Giant Short-faced Bear",
+        "scientificName": "Arctodus simus",
+        "habitat": "Mixed environments from forests to grasslands",
+        "description": "The Giant Short-faced Bear was the largest carnivorous land mammal that ever lived in North America. Standing up to 3.4 meters tall on its hind legs, it was a formidable predator during the Pleistocene epoch.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "North America"
+        ],
+        "threats": [
+            "Climate change",
+            "Competition with humans",
+            "Prey scarcity"
+        ],
+        "weight": "700kg - 1,000kg (1,500lbs - 2,200lbs)",
+        "lifespan": "Unknown",
+        "diet": "Omnivore (with strong carnivore tendencies)",
+        "foundIn": [
+            "United States",
+            "Canada",
+            "Mexico"
+        ],
+        "topSpeed": "Estimated 50-60 km/h (30-37 mph)",
+        "height": "1.8m (6ft) at the shoulder, 3.4m (11ft) when standing",
+        "commonName": "Giant Short-faced Bear",
+        "type": "Mammal",
+        "image": "giant-short-faced-bear",
+        "queryName": "Giant Short-faced Bear"
+    },
+    {
+        "id": "cave-lion",
+        "name": "Cave Lion",
+        "scientificName": "Panthera spelaea",
+        "habitat": "Steppes and grasslands",
+        "description": "The Cave Lion was a large subspecies of lion that lived during the Pleistocene. It was one of the largest cats ever to have existed, about 10% larger than modern lions. It went extinct approximately 14,000 years ago.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Europe",
+            "Asia",
+            "Northwestern North America"
+        ],
+        "threats": [
+            "Climate change",
+            "Human hunting",
+            "Prey scarcity"
+        ],
+        "weight": "Male: 300kg - 350kg (660lbs - 770lbs), Female: 175kg - 250kg (385lbs - 550lbs)",
+        "lifespan": "Unknown",
+        "diet": "Carnivore",
+        "foundIn": [
+            "Europe",
+            "Asia",
+            "Northwestern North America"
+        ],
+        "topSpeed": "Estimated 60 km/h (37 mph)",
+        "height": "1.2m (4ft) at the shoulder",
+        "commonName": "Cave Lion",
+        "type": "Mammal",
+        "image": "cave-lion",
+        "queryName": "Cave Lion"
+    },
+    {
+        "id": "american-cheetah",
+        "name": "American Cheetah",
+        "scientificName": "Miracinonyx trumani",
+        "habitat": "Open plains and grasslands",
+        "description": "The American Cheetah was a prehistoric felid closely related to modern cougars, but evolved convergently to resemble Old World cheetahs. It lived during the Pleistocene epoch and went extinct about 12,000 years ago.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "North America"
+        ],
+        "threats": [
+            "Climate change",
+            "Competition with other predators",
+            "Prey scarcity"
+        ],
+        "weight": "70kg - 95kg (154lbs - 209lbs)",
+        "lifespan": "Unknown",
+        "diet": "Carnivore",
+        "foundIn": [
+            "United States",
+            "Canada"
+        ],
+        "topSpeed": "Estimated 96 km/h (60 mph)",
+        "height": "80cm - 90cm (31in - 35in) at the shoulder",
+        "commonName": "American Cheetah",
+        "type": "Mammal",
+        "image": "american-cheetah",
+        "queryName": "American Cheetah"
+    },
+    {
+        "id": "megalania",
+        "name": "Megalania",
+        "scientificName": "Varanus priscus",
+        "habitat": "Woodlands and open forests",
+        "description": "Megalania was the largest terrestrial lizard known to have existed, growing up to 7 meters in length. It was a carnivorous monitor lizard that lived in Australia during the Pleistocene epoch, becoming extinct around 50,000 years ago.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Australia"
+        ],
+        "threats": [
+            "Climate change",
+            "Human arrival and hunting",
+            "Competition with aboriginal humans"
+        ],
+        "weight": "500kg - 1,000kg (1,100lbs - 2,200lbs)",
+        "lifespan": "Unknown",
+        "diet": "Carnivore",
+        "foundIn": [
+            "Australia"
+        ],
+        "topSpeed": "Unknown",
+        "height": "Length: 5m - 7m (16ft - 23ft)",
+        "commonName": "Megalania",
+        "type": "Reptile",
+        "image": "megalania",
+        "queryName": "Megalania"
+    },
+    {
+        "id": "giant-ground-sloth",
+        "name": "Giant Ground Sloth",
+        "scientificName": "Megatherium americanum",
+        "habitat": "Woodlands and grasslands",
+        "description": "The Giant Ground Sloth was a massive mammal that lived in South America during the Pleistocene epoch. Unlike modern tree sloths, it was ground-dwelling and could rear up on its hind legs to reach vegetation at heights of up to 6 meters.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "South America"
+        ],
+        "threats": [
+            "Climate change",
+            "Human hunting"
+        ],
+        "weight": "4,000kg - 6,000kg (8,800lbs - 13,200lbs)",
+        "lifespan": "Unknown",
+        "diet": "Herbivore",
+        "foundIn": [
+            "Argentina",
+            "Brazil",
+            "Other South American countries"
+        ],
+        "topSpeed": "Unknown",
+        "height": "6m (20ft) when standing on hind limbs",
+        "commonName": "Giant Ground Sloth",
+        "type": "Mammal",
+        "image": "giant-ground-sloth",
+        "queryName": "Giant Ground Sloth"
+    },
+    {
+        "id": "diprotodon",
+        "name": "Diprotodon",
+        "scientificName": "Diprotodon optatum",
+        "habitat": "Forests, woodlands, and shrublands",
+        "description": "Diprotodon was the largest known marsupial ever to have lived. Resembling a giant wombat, it lived in Australia during the Pleistocene epoch until its extinction around 46,000 years ago, potentially due to human hunting.",
+        "conservationStatus": "Extinct",
+        "populationTrend": "Extinct",
+        "geographicRange": [
+            "Australia"
+        ],
+        "threats": [
+            "Climate change",
+            "Human hunting",
+            "Habitat alteration"
+        ],
+        "weight": "2,000kg - 2,800kg (4,400lbs - 6,170lbs)",
+        "lifespan": "Unknown",
+        "diet": "Herbivore",
+        "foundIn": [
+            "Australia"
+        ],
+        "topSpeed": "Unknown",
+        "height": "1.8m (6ft) at the shoulder, 2m (6.6ft) tall",
+        "commonName": "Diprotodon",
+        "type": "Mammal",
+        "image": "diprotodon",
+        "queryName": "Diprotodon"
+    }
+]

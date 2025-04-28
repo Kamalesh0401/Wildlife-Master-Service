@@ -828,6 +828,185 @@ exports.listAnimals = async (req, res) => {
     }
 };
 
+// Controller to add one or multiple animals
+exports.addAnimal = async (req, res) => {
+    try {
+        let animalsToInsert = [];
+        let validationErrors = [];
+        let duplicates = [];
+
+        // Handle array of animals
+        if (req.body && Array.isArray(req.body)) {
+            for (const element of req.body) {
+                const {
+                    name,
+                    scientificName,
+                    habitat,
+                    description,
+                    conservationStatus,
+                    geographicRange,
+                    threats,
+                    weight,
+                    lifespan,
+                    diet,
+                    foundIn,
+                    topSpeed,
+                    height,
+                    commonName,
+                    type,
+                    image,
+                    queryName
+                } = element;
+
+                // Validate required fields
+                if (!name || !scientificName || !habitat || !description || !conservationStatus) {
+                    validationErrors.push({
+                        name: element.name || 'Unnamed Animal',
+                        message: 'Missing required fields: name, scientificName, habitat, description, and conservationStatus are required',
+                    });
+                    continue;
+                }
+
+                const id = generateIdFromName(name);
+
+                // Check if animal with this ID already exists
+                const existingAnimal = await Animal.findOne({ id });
+                if (existingAnimal) {
+                    duplicates.push({
+                        name,
+                        message: `Animal with name '${name}' already exists with ID '${id}'`,
+                    });
+                    continue;
+                }
+
+                animalsToInsert.push({
+                    id,
+                    name,
+                    scientificName,
+                    habitat,
+                    description,
+                    conservationStatus,
+                    geographicRange: geographicRange || [],
+                    threats: threats || [],
+                    weight: weight || 'Unknown',
+                    lifespan: lifespan || 'Unknown',
+                    diet: diet || 'Unknown',
+                    foundIn: foundIn || [],
+                    topSpeed: topSpeed || 'Unknown',
+                    height: height || 'Unknown',
+                    commonName: commonName || name,
+                    type: type || 'Unknown',
+                    image: image || '',
+                    queryName: queryName || name
+                });
+            }
+
+            if (validationErrors.length > 0 || duplicates.length > 0) {
+                return res.status(400).json({
+                    status: 'fail',
+                    message: 'Validation or duplicate check failed for one or more animals',
+                    errors: validationErrors,
+                    duplicates,
+                });
+            }
+
+            if (animalsToInsert.length > 0) {
+                const insertedAnimals = await Animal.insertMany(animalsToInsert);
+                return res.status(201).json({
+                    status: 'success',
+                    data: { animals: insertedAnimals },
+                });
+            } else {
+                return res.status(200).json({
+                    status: 'success',
+                    message: 'No valid animals to add',
+                    data: [],
+                });
+            }
+        }
+        // Handle single animal
+        else if (req.body && typeof req.body === 'object') {
+            const {
+                name,
+                scientificName,
+                habitat,
+                description,
+                conservationStatus,
+                geographicRange,
+                threats,
+                weight,
+                lifespan,
+                diet,
+                foundIn,
+                topSpeed,
+                height,
+                commonName,
+                type,
+                image,
+                queryName
+            } = req.body;
+
+            // Validate required fields
+            if (!name || !scientificName || !habitat || !description || !conservationStatus) {
+                return res.status(400).json({
+                    status: 'fail',
+                    message: 'Missing required fields: name, scientificName, habitat, description, and conservationStatus are required',
+                });
+            }
+
+            const id = generateIdFromName(name);
+
+            // Check if animal with this ID already exists
+            const existingAnimal = await Animal.findOne({ id });
+            if (existingAnimal) {
+                return res.status(400).json({
+                    status: 'fail',
+                    message: `Animal with name '${name}' already exists with ID '${id}'`,
+                });
+            }
+
+            const newAnimal = new Animal({
+                id,
+                name,
+                scientificName,
+                habitat,
+                description,
+                conservationStatus,
+                geographicRange: geographicRange || [],
+                threats: threats || [],
+                weight: weight || 'Unknown',
+                lifespan: lifespan || 'Unknown',
+                diet: diet || 'Unknown',
+                foundIn: foundIn || [],
+                topSpeed: topSpeed || 'Unknown',
+                height: height || 'Unknown',
+                commonName: commonName || name,
+                type: type || 'Unknown',
+                image: image || '',
+                queryName: queryName || name
+            });
+
+            const savedAnimal = await newAnimal.save();
+            return res.status(201).json({
+                status: 'success',
+                data: { animal: savedAnimal },
+            });
+        }
+        // Invalid request body
+        else {
+            return res.status(400).json({
+                status: 'fail',
+                message: 'Invalid request body. Expected a single animal object or an array of animal objects.',
+            });
+        }
+    } catch (error) {
+        res.status(500).json({
+            status: 'error',
+            message: 'Failed to add animal(s)',
+            error: error.message,
+        });
+    }
+};
 // Get animal by ID
 exports.getAnimalById = async (req, res) => {
     try {
@@ -854,7 +1033,7 @@ exports.getAnimalByName = async (req, res) => {
     }
 };
 
-// Update animal by ID
+// Controller to update an animal
 exports.updateAnimal = async (req, res) => {
     try {
         const animal = await Animal.findById(req.params.id);
@@ -862,8 +1041,21 @@ exports.updateAnimal = async (req, res) => {
             return res.status(404).json({ message: 'Animal not found' });
         }
 
+        // If name is provided, check for ID conflicts
+        if (req.body.name) {
+            const newId = generateIdFromName(req.body.name);
+            const existingAnimal = await Animal.findOne({ id: newId });
+            if (existingAnimal && existingAnimal._id.toString() !== req.params.id) {
+                return res.status(400).json({
+                    status: 'fail',
+                    message: `Another animal with name '${req.body.name}' already exists with ID '${newId}'`,
+                });
+            }
+        }
+
         // Update only the fields provided in the request body
         const updatedData = {
+            id: req.body.name ? generateIdFromName(req.body.name) : animal.id,
             name: req.body.name || animal.name,
             scientificName: req.body.scientificName || animal.scientificName,
             habitat: req.body.habitat || animal.habitat,
@@ -896,6 +1088,20 @@ exports.updateAnimal = async (req, res) => {
     }
 };
 
+exports.deleteAnimalById = async (req, res) => {
+    try {
+        const id = req.params.id;
+        const data = await Animal.findByIdAndDelete(id);
+        if (!data) {
+            return res.status(404).json({ message: "Species not found" });
+        }
+        res.status(200).json({ message: "Species deleted successfully" });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: "Internal Server Error", error: err });
+    }
+}
+
 const transformAnimalData = (animal) => {
     const {
         name,
@@ -925,8 +1131,10 @@ const transformAnimalData = (animal) => {
         topSpeed: characteristics.top_speed || 'Unknown',
         height: characteristics.height || 'Unknown',
         commonName: characteristics.common_name || name,
-        type: characteristics.type || 'Unknown',
+        type: characteristics.type || characteristics.group || 'Unknown',
         image: name.toLowerCase().split(' ')[1] || name.toLowerCase(), // E.g., 'lion' from 'Cape Lion'
         slogan: characteristics.slogan || ""
     };
 };
+// Function to generate ID from name
+const generateIdFromName = (name) => name.toLowerCase().replace(/\s+/g, '');
