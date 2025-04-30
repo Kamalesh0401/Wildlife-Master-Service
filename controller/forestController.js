@@ -59,6 +59,16 @@ exports.addForest = async (req, res) => {
                     continue; // Skip to the next forest if validation fails
                 }
 
+                // Check for duplicate name
+                const existingForest = await Forest.findOne({ name });
+                if (existingForest) {
+                    validationErrors.push({
+                        name: element.name,
+                        message: `A forest with the name '${name}' already exists`,
+                    });
+                    continue; // Skip if duplicate name found
+                }
+
                 forestsToInsert.push({
                     name,
                     description,
@@ -101,6 +111,15 @@ exports.addForest = async (req, res) => {
                 });
             }
 
+            // Check for duplicate name
+            const existingForest = await Forest.findOne({ name });
+            if (existingForest) {
+                return res.status(400).json({
+                    status: 'fail',
+                    message: `A forest with the name '${name}' already exists`,
+                });
+            }
+
             const newForest = new Forest({
                 name,
                 description,
@@ -130,35 +149,54 @@ exports.addForest = async (req, res) => {
         });
     }
 };
+
+
 // Update a forest by ID (Admin only)
 exports.updateForest = async (req, res) => {
     try {
         const { id } = req.params;
         const { name, description, overview, conservationStatus, image, gallery, keySpecies } = req.body;
 
-        // Basic validation
-        if (!name || !description || !overview || !conservationStatus) {
-            return res.status(400).json({
-                status: 'fail',
-                message: 'Missing required fields: name, description, overview and conservationStatus are required',
-            });
-        }
-
-        const updatedForest = await Forest.findByIdAndUpdate(
-            id,
-            { name, description, overview, conservationStatus, image, gallery, keySpecies },
-            { new: true, runValidators: true } // Return the updated document and run schema validators
-        );
-
-        if (!updatedForest) {
+        // Fetch the existing forest
+        const existingForest = await Forest.findById(id);
+        if (!existingForest) {
             return res.status(404).json({
                 status: 'fail',
                 message: 'Forest not found',
             });
         }
 
+        // Check for duplicate name (exclude the current forest)
+        if (name && name !== existingForest.name) {
+            const duplicate = await Forest.findOne({ name, _id: { $ne: id } });
+            if (duplicate) {
+                return res.status(400).json({
+                    status: 'fail',
+                    message: 'A forest with this name already exists',
+                });
+            }
+        }
+
+        // Prepare updated data, using new value or fallback to existing
+        const updatedData = {
+            name: name ?? existingForest.name,
+            description: description ?? existingForest.description,
+            overview: overview ?? existingForest.overview,
+            conservationStatus: conservationStatus ?? existingForest.conservationStatus,
+            image: image ?? existingForest.image,
+            gallery: gallery ?? existingForest.gallery,
+            keySpecies: keySpecies ?? existingForest.keySpecies,
+        };
+
+        // Update the forest
+        const updatedForest = await Forest.findByIdAndUpdate(id, updatedData, {
+            new: true,
+            runValidators: true,
+        });
+
         res.status(200).json({
-            status: 'Updated successfully',
+            status: 'success',
+            message: 'Forest updated successfully',
             data: { forest: updatedForest },
         });
     } catch (error) {

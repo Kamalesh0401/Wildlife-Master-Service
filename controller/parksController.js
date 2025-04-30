@@ -57,7 +57,7 @@ exports.addPark = async (req, res) => {
 
         if (Array.isArray(req.body)) {
             for (const element of req.body) {
-                const { name, description, overview, majorAnimals, additionalInfo, image, gallery } = element;
+                const { name, description, overview, majorAnimals, additionalInfo, image, gallery, location } = element;
 
                 if (!name || !description || !overview) {
                     validationErrors.push({
@@ -96,6 +96,7 @@ exports.addPark = async (req, res) => {
                         additionalInfo,
                         image,
                         gallery: gallery || [],
+                        location
                     });
                 }
             }
@@ -126,7 +127,7 @@ exports.addPark = async (req, res) => {
                 });
             }
         } else if (typeof req.body === 'object') {
-            const { name, description, overview, majorAnimals, additionalInfo, image, gallery } = req.body;
+            const { name, description, overview, majorAnimals, additionalInfo, image, location, gallery } = req.body;
 
             if (!name || !description || !overview) {
                 return res.status(400).json({
@@ -162,6 +163,7 @@ exports.addPark = async (req, res) => {
                 additionalInfo,
                 image,
                 gallery: gallery || [],
+                location
             });
 
             const savedPark = await newPark.save();
@@ -193,23 +195,19 @@ exports.addPark = async (req, res) => {
         });
     }
 };
-// Update a park by ID (Admin only)
 exports.updatePark = async (req, res) => {
     try {
-        const { id } = req.params;
-        const { name, description, overview, majorAnimals, additionalInfo, image, gallery } = req.body;
-
-        // Basic validation
-        if (!name || !description || !overview) {
-            return res.status(400).json({
+        const park = await Park.findById(req.params.id);
+        if (!park) {
+            return res.status(404).json({
                 status: 'fail',
-                message: 'Missing required fields: name, description, and overview are required',
+                message: 'Park not found',
             });
         }
 
-        // Validate majorAnimals IDs
-        if (majorAnimals && Array.isArray(majorAnimals)) {
-            for (const animalId of majorAnimals) {
+        // Validate majorAnimals if provided
+        if (req.body.majorAnimals && Array.isArray(req.body.majorAnimals)) {
+            for (const animalId of req.body.majorAnimals) {
                 const animal = await Animal.findById(animalId);
                 if (!animal) {
                     return res.status(400).json({
@@ -220,26 +218,31 @@ exports.updatePark = async (req, res) => {
             }
         }
 
+        const updatedData = {
+            name: req.body.name || park.name,
+            description: req.body.description || park.description,
+            overview: req.body.overview || park.overview,
+            majorAnimals: req.body.majorAnimals || park.majorAnimals,
+            additionalInfo: req.body.additionalInfo || park.additionalInfo,
+            image: req.body.image || park.image,
+            gallery: req.body.gallery || park.gallery,
+            location: req.body.location || park.location,
+        };
+
         const updatedPark = await Park.findByIdAndUpdate(
-            id,
-            { name, description, overview, majorAnimals, additionalInfo, image, gallery },
+            req.params.id,
+            updatedData,
             { new: true, runValidators: true }
         ).populate({
             path: 'majorAnimals',
             select: 'name scientificName habitat conservationStatus image',
         });
 
-        if (!updatedPark) {
-            return res.status(404).json({
-                status: 'fail',
-                message: 'Park not found',
-            });
-        }
-
         res.status(200).json({
             status: 'success',
             data: { park: updatedPark },
         });
+
     } catch (error) {
         if (error.code === 11000) {
             return res.status(400).json({

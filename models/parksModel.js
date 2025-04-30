@@ -18,6 +18,11 @@ const parkSchema = new mongoose.Schema({
         required: [true, 'Overview is required'],
         trim: true,
     },
+    location: {
+        type: String,
+        required: [true, 'Location is required'],
+        trim: true,
+    },
     majorAnimals: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Animal',
